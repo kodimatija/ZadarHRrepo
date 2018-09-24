@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHRrepo[/COLOR]" version="1.0.0" provider-name="ZDtim">
+	<extension point="xbmc.addon.repository" name=".ZadarHRrepo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/kodimatija/repository.ZadarHRrepo/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodimatija/repository.ZadarHRrepo/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodimatija/repository.ZadarHRrepo/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">ZadarHRrepo by ZDtim</summary>
+		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana. 		Pratite nas na facebooku: 		https://www.facebook.com/groups/1492134454236877/- Offical MasterZD grupa      Autor addonova iz ovog repa nije admin samih izvora u njemu tako da ne odgovara za posljedice prilikom reprodukcije i autorskih prava</description>
+		<genre></genre>
+	</extension>
+</addon>
