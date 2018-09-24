@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.kidsnation" name="Kids Nation" version="0.0.4" provider-name="MuadDib">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <summary lang="en">Top content aimed at learning and development for children.</summary>
+    <description lang="en">No Content Is Hosted By Us. Any Issues With The Add-On Or You Have A Request Hit Me Up On Twitter</description>
+    <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+    <genre>kids</genre>
+    <platform>all</platform>
+  </extension>
+</addon>
