@@ -1044,6 +1044,109 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
+<addon id="plugin.video.saturnus" name="[COLOR orange][B]Saturnus[/B][/COLOR]" version="3.0" provider-name="F.O.L">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.youtube.dl" version="15.318.0"/>
+		<import addon="script.module.requests"  />
+    	<import addon="script.module.addon.common" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver"  />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+        <import addon="plugin.video.SaturnusF.O.L" version="2.1" />
+		<import addon="plugin.video.saturnuspremium" version="1.2" />
+    	<import addon="plugin.video.saturnusworld" version="1.1" />
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Saturnus</summary>
+
+		<description lang="en">www.m3u.space
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.SaturnusF.O.L" version="2.1" name="[COLOR orange][B]Saturnus[/B][/COLOR][COLOR gray][B]F.O.L[/B][/COLOR]" provider-name="F.O.L">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.SaturnusF.O.L" version="1.00.032" />
+		<import addon="script.SaturnusF.O.L.artwork" version="1.0.2" />
+		<import addon="script.SaturnusF.O.L.metadata" version="1.0.2" />
+		<import addon="script.module.resolveurl" version="5.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="SaturnusF.O.L.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">SaturnusF.O.L</summary>
+		<description lang="en">[COLOR aqua]SaturnusF.O.L Movies and TV. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels. The author does not host any of the content in this addon and takes no responsibility for content found[/COLOR].</description>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<assets>
+			<icon>icon.jpg</icon>
+			<fanart>fanart.gif</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.png</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.png</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.png</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.saturnuspremium" version="1.2" name="[COLOR gold][B]Saturnus[/B][/COLOR][COLOR gray][B]Premium[/B][/COLOR]" provider-name="F.O.L">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.addon.common" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Saturnus Premium</summary>
+        <description>Saturnus Premium - Live TV / PPV / Sports / Kids / Movies / Entertainment at an affordable price for all.</description>
+        <disclaimer></disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.saturnusworld" name="[COLOR orange][B]Saturnus[/B][/COLOR][COLOR gray][B]World[/B][/COLOR]" version="1.1" provider-name="F.O.L">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.livestreamer" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">www.m3u.space Saturnus World</summary>
+    <description lang="en_gb">www.m3u.space Saturnus World</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.sport365.live" name="Sport365" version="1.0" provider-name="GalAnonim">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1297,6 +1400,23 @@ Skin and code for skin by Demonstratorz</description>
         <summary>Unofficial Addons for Kodi</summary>
         <description>Would you care for some salt with that fork?</description>
         <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="repository.masterzd" name="MasterZDrepo" version="1.1.7" provider-name="Master ZD Team">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="MasterZDrepo">
+            <info compressed="false">http://kodimasterzd.webshopp.net/_repo/addons.xml</info>
+            <checksum>http://kodimasterzd.webshopp.net/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://kodimasterzd.webshopp.net/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Instalacija Builda te najnovijih addona iz Masterzd Repozitorija</summary>
+            <description>Master ZD Team.</description>
+            <platform>all</platform>
     </extension>
 </addon>
 
@@ -1646,6 +1766,24 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
+<addon id="script.module.future"
+       name="future"
+       version="0.16.0.4"
+       provider-name="Ed Schofield">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Clean single-source support for Python 3 and 2</summary>
+    <description lang="en">future is the missing compatibility layer between Python 2 and Python 3. It allows you to use a single, clean Python 3.x-compatible codebase to support both Python 2 and Python 3 with minimal overhead.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/PythonCharmers/python-future</source>
+    <website>http://python-future.org</website>
+  </extension>
+</addon>
+
 <addon id="script.module.futures"
        name="futures"
        version="2.2.0"
@@ -1705,6 +1843,25 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
+<addon id="script.module.kodi-six"
+       name="Kodi Six"
+       version="0.0.2"
+       provider-name="Roman V.M.">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Wrappers around Kodi Python API for seamless Python 2/3 compatibility</summary>
+    <description lang="en">Wrappers around Kodi Python API that normalize handling of textual and byte strings in Python 2 and 3.</description>
+    <platform>all</platform>
+    <license>GPL v.3</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=327883</forum>
+    <source>https://github.com/romanvm/kodi.six</source>
+    <news>- Do not patch class __init__ methods</news>
+  </extension>
+</addon>
+
 <addon id="script.module.liveresolver"
      name="LiveResolver"
      version="2.2.20"
@@ -1721,6 +1878,34 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <platform>all</platform>
     <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
     <description lang="en"></description>
+  </extension>
+</addon>
+
+<addon id="script.module.livestreamer"
+       name="livestreamer"
+       version="1.12.0"
+       provider-name="Christopher Rosell">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"
+                      version="1.1.0"
+                     optional="false"/>
+    <import addon="script.module.singledispatch"
+                      version="3.4.0.3"
+                     optional="false"/>
+    <import addon="script.module.futures"
+                      version="2.2.0"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Livestreamer extracts streams from various services</summary>
+    <description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/chrippa/livestreamer.git</source>
+    <website>http://livestreamer.io</website>
   </extension>
 </addon>
 
@@ -1983,6 +2168,34 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
+<addon id="script.module.routing" name="Plugin routing" version="0.2.1" provider-name="takoi">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Routing module for plugins</summary>
+        <description lang="en">Library for building and parsing plugin URLs.
+
+Documentation: https://github.com/tamland/kodi-plugin-routing</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <platform>all</platform>
+        <source>https://github.com/tamland/kodi-plugin-routing</source>
+    </extension>
+</addon>
+
+<addon id="script.module.SaturnusF.O.L" name="SaturnusF.O.L Module" version="1.00.032" provider-name="F.O.L">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">SaturnusF.O.L</summary>
+	</extension>
+</addon>
+
 <addon id="script.module.schism.common" name="Common Libraries" version="2018.03.10" provider-name="common">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -2043,6 +2256,25 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<website>https://pypi.python.org/pypi/simplejson/</website>
 		<source>https://pypi.python.org/pypi/simplejson/</source>
 	</extension>
+</addon>
+
+<addon id="script.module.singledispatch"
+       name="singledispatch"
+       version="3.4.0.3"
+       provider-name="Łukasz Langa">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Single-dispatch generic functions</summary>
+    <description>This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.python.org/pypi/singledispatch#downloads</source>
+    <website>http://docs.python.org/3/library/functools.html#functools.singledispatch</website>
+  </extension>
 </addon>
 
 <addon id="script.module.six"
@@ -2306,6 +2538,30 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	<extension point="xbmc.addon.metadata">
 		<summary>Metadata for the Poseidon Addon</summary>
 		<description>Metadata for Poseidon are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.SaturnusF.O.L.artwork" version="1.0.2" name="SaturnusF.O.L Artwork" provider-name="F.O.L">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the SaturnusF.O.L Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.SaturnusF.O.L.metadata" version="1.0.2" name="SaturnusF.O.L Metadata" provider-name="F.O.L">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the SaturnusF.O.L Addon</summary>
+		<description>Metadata for SaturnusF.O.L are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
