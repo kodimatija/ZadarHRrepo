@@ -796,7 +796,10 @@
 	<import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
-  </requires>
+	<import addon="plugin.video.adrianakids" version="1.0.2" />
+	<import addon="plugin.video.adrianaxxx" version="1.0.1" />
+	<import addon="repository.ZadarHRrepo" version="1.1.6" />
+	</requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
