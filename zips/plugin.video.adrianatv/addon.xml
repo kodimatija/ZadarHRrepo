@@ -2,7 +2,7 @@
 
 				<!--// Adriana TV Free Tv List Addon Hrvatski\\-->
 				
-<addon id="plugin.video.adrianatv" name="[COLOR orangered]Adriana TV[/COLOR]" version="1.0.0" provider-name="TJL">
+<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.0" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
