@@ -22,7 +22,7 @@
 	<import addon="plugin.video.adrianaxxx" version="1.0.1" />
 	<import addon="plugin.video.adrianamusic" version="1.0.4" />
 	<import addon="plugin.video.adrianamovie" version="1.0.3" />
-	<import addon="repository.ZadarHRrepo" version="1.1.6" />
+	<import addon="repository.ZadarHRrepo" version="1.1.7" />
 	</requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>

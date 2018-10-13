@@ -860,7 +860,7 @@
 	<import addon="plugin.video.adrianaxxx" version="1.0.1" />
 	<import addon="plugin.video.adrianamusic" version="1.0.4" />
 	<import addon="plugin.video.adrianamovie" version="1.0.3" />
-	<import addon="repository.ZadarHRrepo" version="1.1.6" />
+	<import addon="repository.ZadarHRrepo" version="1.1.7" />
 	</requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -1169,6 +1169,38 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="scakemyer">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="repository.quasar" optional="true" />
+        <import addon="script.quasar.burst" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Quasar: Torrent streaming</summary>
+        <description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>https://github.com/scakemyer/plugin.video.quasar</website>
+        <source>https://github.com/scakemyer/plugin.video.quasar</source>
+        <forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+        <license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshots/home.jpg</screenshot>
+            <screenshot>resources/screenshots/movies.jpg</screenshot>
+            <screenshot>resources/screenshots/webui.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.sport365.live" name="Sport365" version="1.0" provider-name="GalAnonim">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1438,6 +1470,24 @@ Skin and code for skin by Demonstratorz</description>
         </extension>
     </addon>
 
+<addon id="repository.KM" name=".[COLOR red]KM[/COLOR] repo" version="2.0.0" provider-name="KodiMatija">
+	<extension point="xbmc.addon.repository" name=".KM Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">KM offical repo</summary>
+		<description lang="en">U ovom repu cete naci najnovije addone i postavke za podrucje ExYu</description>
+		<genre></genre>
+	</extension>
+</addon>
+
 <addon id="repository.kodibae" name="[COLOR pink]Kodi Bae Repository[/COLOR]" version="1.0.0" provider-name="kodibae">
     <extension point="xbmc.addon.repository" name="[COLOR pink]Kodi Bae Repository[/COLOR]">
     <dir>
@@ -1469,6 +1519,8 @@ Skin and code for skin by Demonstratorz</description>
         <platform>all</platform>
     </extension>
 </addon>
+
+<addon id="repository.quasar" name="Quasar Repository" version="0.9.78" provider-name="scakemyer"><requires></requires><extension point="xbmc.addon.repository" name="Quasar Repository"><info compressed="false">http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml</info><checksum>http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml.md5</checksum><datadir zip="true">http://localhost:65251/repository/scakemyer/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Quasar updates</summary></extension></addon>
 
 <addon id="repository.supremacy" name="[COLORaqua]supremacy[/COLOR]" version="2.5" provider-name="supremacy">
 	<extension point="xbmc.addon.repository" name="[COLORaqua]supremacy[/COLOR]">
@@ -1558,7 +1610,9 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<genre>all</genre>
 		<news>
 V-1.1.7
-Napunjeni addoni Adriana sport,xxx,kids,movies
+Napunjeni addoni Adriana sport,xxx,kids,movies (all in one install), maknuti saturnusi
+uživajte
+zadarbuild.com.hr
 		</news>
 	</extension>
 </addon>
@@ -2238,18 +2292,6 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
     </extension>
 </addon>
 
-<addon id="script.module.SaturnusF.O.L" name="SaturnusF.O.L Module" version="1.00.032" provider-name="F.O.L">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.requests" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">SaturnusF.O.L</summary>
-	</extension>
-</addon>
-
 <addon id="script.module.schism.common" name="Common Libraries" version="2018.03.10" provider-name="common">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -2609,6 +2651,30 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<description>Metadata for Poseidon are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.quasar.burst" name="Quasar [COLOR FFFF6B00]Burst[/COLOR]" version="0.5.10" provider-name="scakemyer">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.quasar" optional="false"/>
+    </requires>
+    <extension point="xbmc.python.script" library="burst.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Quasar torrents provider</summary>
+        <description lang="en">Quasar Burst is a lean and mean multi-provider for Quasar.</description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.
+        </disclaimer>
+        <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+        <website>https://burst.surge.sh</website>
+        <source>https://bitbucket.org/scakemyer/script.quasar.burst</source>
+        <forum>TODO</forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.24" provider-name="marcelveldt">
