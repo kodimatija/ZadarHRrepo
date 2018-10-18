@@ -1691,27 +1691,18 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">ZadarHRrepo by ZDtim</summary>
-		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana
-V-1.1.7
-Napunjeni addoni Adriana sport,xxx,kids,movies (all in one install), maknuti saturnusi
-uživajte
-zadarbuild.com.hr
-
-V-1.1.8
-Dodani Adriana film, world & sport
-Uživajte u gledanu
-zadarbuild.com.hr</description>
+		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana</description>
 		<genre>all</genre>
 		<news>
 V-1.1.7
 Napunjeni addoni Adriana sport,xxx,kids,movies (all in one install), maknuti saturnusi
 uživajte
 zadarbuild.com.hr
-
 V-1.1.8
-Dodani Adriana film, world & sport
+Dodani Adriana film, world i sport
 Uživajte u gledanu
-zadarbuild.com.hr</news>
+zadarbuild.com.hr
+</news>
 	</extension>
 </addon>
 
