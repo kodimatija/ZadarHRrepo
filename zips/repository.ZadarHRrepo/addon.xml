@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.1.7" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.1.8" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -12,13 +12,26 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">ZadarHRrepo by ZDtim</summary>
-		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana</description>
+		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana
+V-1.1.7
+Napunjeni addoni Adriana sport,xxx,kids,movies (all in one install), maknuti saturnusi
+uživajte
+zadarbuild.com.hr
+
+V-1.1.8
+Dodani Adriana film, world & sport
+Uživajte u gledanu
+zadarbuild.com.hr</description>
 		<genre>all</genre>
 		<news>
 V-1.1.7
 Napunjeni addoni Adriana sport,xxx,kids,movies (all in one install), maknuti saturnusi
 uživajte
 zadarbuild.com.hr
-		</news>
+
+V-1.1.8
+Dodani Adriana film, world & sport
+Uživajte u gledanu
+zadarbuild.com.hr</news>
 	</extension>
 </addon>
