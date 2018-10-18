@@ -2,7 +2,7 @@
 
 				<!--// Adriana TV Free Tv List Addon Hrvatski\\-->
 				
-<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.0" provider-name="MLAĐO">
+<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.2" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -21,7 +21,9 @@
 	<import addon="plugin.video.adrianakids" version="1.0.2" />
 	<import addon="plugin.video.adrianamusic" version="1.0.4" />
 	<import addon="plugin.video.adrianamovie" version="1.0.3" />
-	<import addon="repository.ZadarHRrepo" version="1.1.7" />
+	<import addon="plugin.video.adrianafilm" version="1.0.5"/>
+	<import addon="plugin.video.adrianasvijet" version="1.0.7"/>
+	<import addon="repository.ZadarHRrepo" version="1.1.7"/>
 	</requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
