@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.adrianafilm" version="1.0.5" name="[B][I][COLORgold]Adrianafilm[/B][/COLOR][/I]" provider-name="ĐOMLA">
+<addon id="plugin.video.adrianafilm" version="1.0.5" name="[B][I][COLORgold]AdrianaFILM[/B][/COLOR][/I]" provider-name="ĐOMLA">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.Yoda" />
