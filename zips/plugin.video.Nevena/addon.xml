@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Nevena" name="[B][COLOR red]Nevena[/COLOR][/B]" version="1.1.2" provider-name="Tojelako">
+  <requires>
+    <import addon="plugin.video.f4mTester"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="false"/>
+    <import addon="plugin.video.youtube" optional="false" />
+    <import addon="script.module.urlresolver" optional="false"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>plugin.video.Nevena</summary>
+    <description>    
+	
+    </description>
+<platform>all</platform>
+  <assets>Vlasnik ovog addona ne poseduje nikakav matrijal unutar ovog addona . 
+	Koristi linkove koji su dostupni na internetu.
+	I ne snosi nikakvu odgovornost za njegovu upotrebu.
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+  </extension>
+</addon>
+
