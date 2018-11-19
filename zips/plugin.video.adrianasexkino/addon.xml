@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.adrianasexkino" name="[B][I][COLOR orchid]Adriana sexkino[/B][/COLOR][/I]" version="1.0.1" provider-name="Đomla">
+<addon id="plugin.video.adrianasexkino" name="[B][I][COLOR orchid]Adriana sexkino[/B][/COLOR][/I]" version="1.0.1.1" provider-name="ĐOMLA">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson"/>
