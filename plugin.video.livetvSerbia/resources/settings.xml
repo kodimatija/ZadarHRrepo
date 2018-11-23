@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="Settings">
+	
+	<setting id="tvm_token" type="text" default="" visible="false"/>
+    <setting id="authtime" type="text" default="" visible="false"/>
+    <setting id="currentauth" type="textr" default="" visible="false"/>
+
+
+
+
+	</category>
+</settings>

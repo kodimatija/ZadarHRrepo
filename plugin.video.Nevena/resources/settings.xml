@@ -1,0 +1,27 @@
+﻿<settings>
+  <category label="Nevena Podesavanja">
+    <setting id="save_location" type="folder"  label="Izaberite Lokaciju Za Preuzimanje" default=""/>
+    <setting id="use_thumb" type="bool" label="Koristite Thumbnails Kao Fanart" default="false" />
+    <setting id="logo-folderPath" type="folder"  label="Izaberite Direktorijum Za Logo" default=""/>
+    <setting id="add_playlist" type="bool" label="Dodajte Stavku Sa Vaseg Linka Kao Plej Listu" default="false"/>
+    <setting id="ask_playlist_items" type="bool" label="Zatrazite Stavku Iz Liste Da Izaberetw Za Dialog" default="false" />
+    <setting id="debug" type="bool" label="Omoguci Dodatni Debugging" default="false"/>
+    <setting id="1080pquality" label="Reprodukuj U 1080p Video Ako Je Dostupno (Nije Za Uzivo)" type="bool" default=""/>
+    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Reprudukuj IMDBid Sa:" default="Pulsar"/>
+    <setting id="donotshowbychannels" label="Ne Prikazuj Stavke Ispod Imena Kanala" type="bool" default="false"/>
+    
+    <setting id="parentalblockedpin" label="Roditeljsko Blokiranje Pinom" type="text"  option="hidden"  default=""/> 
+    <setting id="parentalblocked" label="Da Li Je Roditeljsko Blokiranje Primenjeno?" type="bool" default="false" enable="false"/>
+    
+  </category>
+
+
+  <category label=".xml Databaze">
+    <setting id="browse_xml_database" type="bool" label="Nadji I Pusti Iz.xml Databaze" default="false"/>
+    <setting type="action" label="Dodaj .xml Databasu" option="close" action="Container.Update(plugin://plugin.video.Nevena/?mode=14)" />
+  </category>
+  <category label="Tvoji Fajlovi">
+    <setting id="browse_community" type="bool" label="Nadji I Pusti Iz Tvoje Datoteke" default="false"/>
+    <setting type="action" label="Dudaj URL Fajl Sa Tvoje Adrese" option="close" action="Container.Update(plugin://plugin.video.Nevena/?mode=10)" />
+  </category>
+</settings>

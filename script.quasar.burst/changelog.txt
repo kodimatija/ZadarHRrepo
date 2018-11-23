@@ -1,0 +1,215 @@
+Burst changelog
+===============
+ - fixed wrong alphareign credentials, in case it comes 
+   back
+ - fixed uhdbits name parsing
+
+[B]v0.5.9[/B] - 2017-03-28
+ - fixed regression from unicode fix for cookies path
+
+[B]v0.5.8[/B] - 2017-03-27
+ - updated documentation for adding private providers
+ - updated t411 URL
+ - added nCore provider
+ - fixed custom private provider checks for username
+ - fixed issue with cookies path having unicode chars
+ - fixed uhdbits torrent catcher
+ - updated Hebrew strings
+ - added 240p resolution and release tags for TV/VHS rips
+
+[B]v0.5.7[/B] - 2017-03-02
+ - fixed unicode error from URLError exceptions
+ - fixed custom providers not getting enabled
+ - fixed baibako.tv provider
+ - fixed error message for non-existing overrides.py
+
+[B]v0.5.6[/B] - 2017-02-24
+ - added missing definitions after loading refactor
+ - updated French language
+
+[B]v0.5.5[/B] - 2017-02-22
+ - benchmark loading definitions
+ - updated documentation
+ - fixes to loading refactor
+ - refactored loading of providers and overrides
+ - added BaibaKo.TV, torrent3d.ru, 3d-tracker.ru, HDCLUB.org, 
+   fixed a few other ones
+ - updated Hebrew strings
+
+[B]v0.5.4[/B] - 2017-02-15
+ - fixed HD Torrent's mono-result reliability
+ - added tfile provider, fixed blocked domains for cyrillic 
+   trackers
+ - removed broken and expensive string normalization
+ - added serialz provider
+
+[B]v0.5.3[/B] - 2017-02-14
+ - updated documentation
+ - added Ukrainian language, updated Russian language
+ - added charset detection and decoding, fixed unicode 
+   definitions
+ - added Russian and Ukrainian trackers
+ - fixed nyaa provider with protocol missing in url, moved to 
+   https
+
+[B]v0.5.2[/B] - 
+
+[B]v0.5.10[/B] - 2017-03-28
+ - fixed wrong alphareign credentials, in case it comes 
+   back
+ - fixed uhdbits name parsing
+ - fixed regression from unicode fix for cookies path
+ - updated documentation for adding private providers
+ - updated t411 URL
+ - added nCore provider
+ - fixed custom private provider checks for username
+ - fixed issue with cookies path having unicode chars
+ - fixed uhdbits torrent catcher
+ - updated Hebrew strings
+ - added 240p resolution and release tags for TV/VHS rips
+ - fixed unicode error from URLError exceptions
+ - fixed custom providers not getting enabled
+ - fixed baibako.tv provider
+ - fixed error message for non-existing overrides.py
+ - added missing definitions after loading refactor
+ - updated French language
+ - benchmark loading definitions
+ - updated documentation
+ - fixes to loading refactor
+ - refactored loading of providers and overrides
+ - added BaibaKo.TV, torrent3d.ru, 3d-tracker.ru, HDCLUB.org, 
+   fixed a few other ones
+ - updated Hebrew strings
+ - fixed HD Torrent's mono-result reliability
+ - added tfile provider, fixed blocked domains for cyrillic 
+   trackers
+ - removed broken and expensive string normalization
+ - added serialz provider
+ - updated documentation
+ - added Ukrainian language, updated Russian language
+ - added charset detection and decoding, fixed unicode 
+   definitions
+ - added Russian and Ukrainian trackers
+ - fixed nyaa provider with protocol missing in url, moved to 
+   https
+ - fixed OrderedDict missing in Kodi 16
+
+[B]v0.5.1[/B] - 2017-02-09
+ - fixed creating cookies directory in temp folder
+
+[B]v0.5.0[/B] - 2017-02-09
+ - previous token or login cookies reused across multiple 
+   queries for the same search
+ - added exceptions to language preference setting
+ - improved unicode handling
+ - fixed regression in new resolution matching
+ - fixed resolution matching to be consistent with Quasar
+ - updated Hebrew strings
+
+[B]v0.4.3[/B] - 2017-02-06
+ - fixed exception when titles in translations is None
+ - fixed edge case with XtremeZone finding wrong torrent 
+   link
+ - disabled sound with notifications
+ - fixed XtremeZone again...
+
+[B]v0.4.2[/B] - 2017-02-04
+ - fixed YTS not returning actual download link
+
+[B]v0.4.1[/B] - 2017-02-04
+ - added note in settings about timeout needing to be lower 
+   than Quasar's
+ - reduced default number of results per provider to 10, 
+   maximum 20, and max timeout to 20s
+ - fixed exception on invalid result in extraction from 
+   APIs
+
+[B]v0.4.0[/B] - 2017-02-03
+ - added language preference setting from Kodi, fixed timeouts 
+   on bad requests and added (almost) full documentation
+ - updated Hebrew strings
+
+[B]v0.3.4[/B] - 2017-01-30
+ - fixed magnet links getting passed with cookies when 
+   CloudHole was enabled
+
+[B]v0.3.3[/B] - 2017-01-29
+ - fixed empty Block keyword in Advanced settings, and added 
+   'Require' keyword filtering
+ - updated Hebrew strings
+
+[B]v0.3.2[/B] - 2017-01-28
+ - added keyword filtering in Advanced settings
+ - added Advanced settings with separate size range for movies, 
+   seasons and episodes
+ - fixed XtremeZone provider
+ - give credit to mancuniancol
+
+[B]v0.3.1[/B] - 2017-01-24
+ - fixed broken Spanish string formatters in translations
+ - updated idope icon
+ - fix overquoting of URLs, add half-baked HD Torrents 
+   provider
+
+[B]v0.3.0[/B] - 2017-01-21
+ - reduce default timeout
+ - add support for custom providers and overrides (see 
+   readme)
+ - clarify release types in settings names
+ - release to website
+
+[B]v0.2.9[/B] - 2017-01-21
+ - improve changelog format
+ - fixed more logging errors (fixes ruhunt)
+
+[B]v0.2.8[/B] - 2017-01-20
+ - fixed number parsing (fixes rutor), traceback logging 
+   errors, added website URL
+
+[B]v0.2.7[/B] - 2017-01-20
+ - fix sending valid magnets, empty int parsing, source 
+   link
+
+[B]v0.2.6[/B] - 2017-01-19
+ - fixed most season searches, size parsing and comparison, 
+   special t411 handling
+ - Hebrew strings update
+
+[B]v0.2.5[/B] - 2017-01-18
+ - workaround picky tv_keywords2 for idope and rutor
+ - add dates to changelog
+ - add WTFPL license
+
+[B]v0.2.4[/B] - 2017-01-18
+ - generate changelog, push icon/fanart/changelog to repo
+ - add .gitlab-ci.yml
+ - fix english strings.po, add translation checking script
+ - a few definitions fixes, mostly temporary for t411..
+
+[B]v0.2.3[/B] - 2017-01-15
+ - fix general search
+ - proper language/utf-8 handling
+
+[B]v0.2.2[/B] - 2017-01-14
+ - use API for t411
+
+[B]v0.2.1[/B] - 2017-01-14
+ - add token authorization support
+
+[B]v0.2.0[/B] - 2017-01-14
+ - extract torrents from subpages
+
+[B]v0.1.3[/B] - 2017-01-13
+ - conditional private provider settings for user/pass
+
+[B]v0.1.2[/B] - 2017-01-13
+ - t411 and filelist overrides
+
+[B]v0.1.1[/B] - 2017-01-12
+ - fix returning max results per provider
+
+[B]v0.1.0[/B] - 2017-01-12
+ - first version
+ - initial commit
+
+
