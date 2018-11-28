@@ -942,7 +942,7 @@ Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode 
 
 				<!--// Adriana TV Free Tv List Addon Hrvatski\\-->
 
-<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.3" provider-name="MLAĐO">
+<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.4" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -953,7 +953,8 @@ Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode 
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.maverick.pairwith" version="1.6"/>
+	<import addon="plugin.video.youtube" version="3.0.0"/>
 	<import addon="script.module.urlresolver" />
 	<import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
@@ -978,7 +979,7 @@ Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode 
 
 				<!--// Adriana XXX Free Tv List Addon Hrvatski\\-->
 
-<addon id="plugin.video.adrianaxxx" name="[B][I][COLOR blue]Adriana XXX[/B][/COLOR][/I]" version="1.0.1" provider-name="MLAĐO">
+<addon id="plugin.video.adrianaxxx" name="[B][I][COLOR blue]Adriana XXX[/B][/COLOR][/I]" version="1.0.2" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -994,6 +995,7 @@ Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode 
 	<import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.maverick.pairwith" version="1.6"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -1001,7 +1003,7 @@ Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode 
   <extension point="xbmc.addon.metadata">
 		<summary lang="hr_HR">Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode do strimova.</summary>
 		<platform>all</platform>
-		<website></website>
+		<website>zadarbuild.com.hr</website>
   </extension>
 </addon>
 
@@ -1811,7 +1813,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.0" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.1" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -1835,6 +1837,8 @@ V-1.1.8
 Dodani Adriana film, world i sport
 Uživajte u gledanu
 zadarbuild.com.hr
+V-1.2.1
+Dodana skripta za uparivanje IP adrese
 </news>
 	</extension>
 </addon>
@@ -1897,6 +1901,24 @@ zadarbuild.com.hr
 		<description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.maverick.pairwith"
+  name="Maverick Pair With"
+  version="1.6"
+  provider-name="Maverick">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Maverick Pair With</summary>
+    <description lang="en">Maverick Pair With</description>
+	<disclaimer>Maverick Pair With</disclaimer>
+  </extension>
 </addon>
 
 <addon id="script.module.addon.common"
