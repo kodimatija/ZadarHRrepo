@@ -1460,6 +1460,25 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
+<addon id="plugin.video.terminator" version="2.0" name="[COLOR gold][B]Terminator[/B][/COLOR]" provider-name="TERMI">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.addon.common" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Terminator</summary>
+        <description>Terminator - TV uživo / PPV / Sport / Djećji-Crtići / Filmovi / Razonoda po pristupačnoj cijeni za sve.</description>
+        <disclaimer></disclaimer>
+        <language>hr</language>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="plugin.video.uranus" version="2018.02.22" name="Uranus" provider-name="Uranus">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
@@ -1813,7 +1832,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.1" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.2" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -1839,6 +1858,8 @@ Uživajte u gledanu
 zadarbuild.com.hr
 V-1.2.1
 Dodana skripta za uparivanje IP adrese
+V-1.2.2
+Dodan Terminator TV addon
 </news>
 	</extension>
 </addon>
