@@ -746,32 +746,31 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.adrianafilm" version="1.0.5" name="[B][I][COLORgold]AdrianaFILM[/B][/COLOR][/I]" provider-name="ĐOMLA">
+<addon id="plugin.video.adrianafilm" version="1.0.6" name="[B][I][COLORgold]Adrianafilm[/B][/COLOR][/I]" provider-name="ĐOMLA">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.Yoda" />
-		<import addon="script.Yoda.artwork" version="1.0.5" />
-		<import addon="script.Yoda.metadata" version="1.0.0" />
-		<import addon="script.module.resolveurl" version="5.0.0" />
+		<import addon="script.module.exodusredux" />
+		<import addon="script.exodusredux.artwork" />
+		<import addon="script.exodusredux.metadata" />
+		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
+		<import addon="script.module.lambdascrapers" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="adrianafilm.py">
+	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[COLORyellow]Adrianafilm[/COLOR]</summary>
-		<description lang="en">[COLOR blue]Adrianafilm Movies and TV. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels. The author does not host any of the content in this addon and takes no responsibility for content found[/COLOR].</description>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<summary lang="hr">Adriana film</summary>
+		<description lang="hr">[B]Adriana film[/B][CR] [B]***Lambda Sources Edition***[/B][CR][CR][COLOR blue]Adriana film filmovi i TV. Ovaj dodatak ne čini dio Media Centra za Kodi. Nemojte tražiti pomoć s ovim dodatkom iz bilo kojeg od službenih kanala za podršku Kodia. Autor ne posjeduje linkove za sadržaj u ovom dodatku i ne preuzima nikakvu odgovornost za pronađene sadržaje[/COLOR].</description>
+		<disclaimer lang="hr">Autor ovog dodatka ne sadrži bilo koji sadržaj koji se nalazi i nema vezu s bilo kojim davateljima sadržaja. Ovaj dodatak jednostavno pretražuje web stranice za sadržaj. Koristite se na vlastiti rizik!</disclaimer>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<assets>
-			<icon>icon.jpg</icon>
-			<fanart>fanart.png</fanart>
-    			<screenshot>resources/screenshots/slika-01.png</screenshot>
-    			<screenshot>resources/screenshots/slika-02.png</screenshot>
-    			<screenshot>resources/screenshots/slika-03.png</screenshot>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot></screenshot>
 		</assets>
 		<news></news>
 	</extension>
@@ -942,7 +941,7 @@ Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode 
 
 				<!--// Adriana TV Free Tv List Addon Hrvatski\\-->
 
-<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.4" provider-name="MLAĐO">
+<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.5" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -962,9 +961,8 @@ Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode 
 	<import addon="plugin.video.adrianakids" version="1.0.2" />
 	<import addon="plugin.video.adrianamusic" version="1.0.4" />
 	<import addon="plugin.video.adrianamovie" version="1.0.3" />
-	<import addon="plugin.video.adrianafilm" version="1.0.5"/>
+	<import addon="plugin.video.adrianafilm" version="1.0.6"/>
 	<import addon="plugin.video.adrianasvijet" version="1.0.7"/>
-	<import addon="repository.ZadarHRrepo" />
 	</requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -1460,7 +1458,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="plugin.video.terminator" version="2.0" name="[COLOR gold][B]Terminator[/B][/COLOR]" provider-name="TERMI">
+<addon id="plugin.video.terminator" version="2.1" name="[COLOR gold][B]Terminator[/B][/COLOR]" provider-name="TERMI">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" optional="true" />
@@ -1832,7 +1830,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.2" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.3" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -1860,6 +1858,8 @@ V-1.2.1
 Dodana skripta za uparivanje IP adrese
 V-1.2.2
 Dodan Terminator TV addon
+V-1.2.3
+Azurirana Adriana TV i AdrianaFilm
 </news>
 	</extension>
 </addon>
@@ -1920,6 +1920,30 @@ Dodan Terminator TV addon
 	<extension point="xbmc.addon.metadata">
 		<summary>Metadata for the Exodus Addon</summary>
 		<description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.exodusredux.artwork" version="1.0.2" name="Exodus Redux Artwork" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Exodus Redux Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.exodusredux.metadata" version="1.0.2" name="Exodus Redux Metadata" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Exodus Redux Addon</summary>
+		<description>Metadata for Exodus Redux are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2139,6 +2163,18 @@ Dodan Terminator TV addon
 	</extension>
 </addon>
 
+<addon id="script.module.exodusredux" name="Exodus Redux Module" version="1.0.9" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Exodus Redux</summary>
+	</extension>
+</addon>
+
 <addon id="script.module.future"
        name="future"
        version="0.16.0.4"
@@ -2235,6 +2271,25 @@ Dodan Terminator TV addon
   </extension>
 </addon>
 
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.0" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<!--<extension point="xbmc.service" library="CleanupService.py" start="startup" />-->
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<summary lang="en">Lambdascrapers Module</summary>
+			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+        		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        		<license>Beerware rev. 42</license>
+		</extension>
+</addon>
+
 <addon id="script.module.liveresolver"
      name="LiveResolver"
      version="2.2.20"
@@ -2311,8 +2366,8 @@ Dodan Terminator TV addon
 
 <addon id="script.module.metahandler"
      name="metahandler"
-     version="2.9.0"
-     provider-name="Eldorado">
+     version="3.0.3"
+     provider-name="Eldorado, jsergio">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.simplejson" version="3.3.0"/>
@@ -2322,7 +2377,7 @@ Dodan Terminator TV addon
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com</description>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
@@ -2545,7 +2600,7 @@ Dodan Terminator TV addon
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.06" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.19" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />

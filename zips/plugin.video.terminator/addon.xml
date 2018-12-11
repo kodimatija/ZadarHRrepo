@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.terminator" version="2.0" name="[COLOR gold][B]Terminator[/B][/COLOR]" provider-name="TERMI">
+<addon id="plugin.video.terminator" version="2.1" name="[COLOR gold][B]Terminator[/B][/COLOR]" provider-name="TERMI">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" optional="true" />

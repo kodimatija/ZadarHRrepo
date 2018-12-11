@@ -4,8 +4,8 @@ FabAddon = xbmcaddon.Addon('plugin.video.terminator')
 Username = FabAddon.getSetting("Username")
 Password = FabAddon.getSetting("Password")
 PVRon = FabAddon.getSetting("PVRUpdater")
-lehekylg = base64.b64decode("aHR0cDovL2tzcG9ydGlwdHYuY29t") #--> URL PROVIDERA
-pordinumber = base64.b64decode("MTU1Nw==")
+lehekylg = base64.b64decode("aHR0cDovL2lwdHYuY2FibGVndXkucHJvLnN0cmVhbXR2LnRv") #--> URL PROVIDERA
+pordinumber = base64.b64decode("ODA4MA==")
 EPGurl = base64.b64decode("JXM6JXMveG1sdHYucGhwP3VzZXJuYW1lPSVzJnBhc3N3b3JkPSVz")%(lehekylg,pordinumber,Username,Password)
 NewPVR = xbmc.translatePath('special://home/userdata/addon_data/pvr.iptvsimple/players.m3u8')
 iVueRepo = xbmc.translatePath('special://home/addons/xbmc.repo.ivueguide')

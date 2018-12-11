@@ -28,8 +28,8 @@ ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'iic
 FANART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'fanart.jpg')) 
 APKS = base64.b64decode("aHR0cDovL2ZhYmlwdHYuY29tL2Fwa3MvbmV3YXBrcy50eHQ=")
 HOME =  xbmc.translatePath('special://home/')
-lehekylg= base64.b64decode("aHR0cDovL2tzcG9ydGlwdHYuY29t") #--> OVDJE IDE URL OD IPTV PROVIDERA
-pordinumber= ("1557") #--> PORT NUMBER
+lehekylg= base64.b64decode("aHR0cDovL2lwdHYuY2FibGVndXkucHJvLnN0cmVhbXR2LnRv") #--> OVDJE IDE URL OD IPTV PROVIDERA
+pordinumber= ("8080") #--> PORT NUMBER
 message = "VU5BVVRIT1JJWkVEIEVESVQgT0YgQURET04h"
 kasutajanimi=plugintools.get_setting("Username")
 salasona=plugintools.get_setting("Password")
@@ -105,7 +105,7 @@ def peamenyy(params):
 def Tools(params):
 	plugintools.add_item( action=vod_channels("ZXhlY3V0ZV9haW5mbw=="),   title="[COLOR gold][B]Informacije o racunu[/B][/COLOR]", thumbnail=os.path.join(LOAD_LIVE,vod_channels("bXlhY2MucG5n")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
 	plugintools.add_item( action=vod_channels("R29EZXYuREN0ZXN0"),   title="[COLOR gold][B]Pokreni Speedtest[/B][/COLOR]" , thumbnail=GoDev.Images + 'speed.png', fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
-	plugintools.add_item( action=vod_channels("bGljZW5zZV9jaGVjaw=="), title="[COLOR gold][B]Saturnus Premium Postavke[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("aWNvbi5wbmc=")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=False )
+	plugintools.add_item( action=vod_channels("bGljZW5zZV9jaGVjaw=="), title="[COLOR gold][B]Terminator Postavke[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("aWNvbi5wbmc=")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=False )
 
 
 def TheDev(params):

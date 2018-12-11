@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.adrianafilm" version="1.0.5" name="[B][I][COLORgold]AdrianaFILM[/B][/COLOR][/I]" provider-name="ĐOMLA">
+<addon id="plugin.video.adrianafilm" version="1.0.6" name="[B][I][COLORgold]Adrianafilm[/B][/COLOR][/I]" provider-name="ĐOMLA">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.Yoda" />
-		<import addon="script.Yoda.artwork" version="1.0.5" />
-		<import addon="script.Yoda.metadata" version="1.0.0" />
-		<import addon="script.module.resolveurl" version="5.0.0" />
+		<import addon="script.module.exodusredux" />
+		<import addon="script.exodusredux.artwork" />
+		<import addon="script.exodusredux.metadata" />
+		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
+		<import addon="script.module.lambdascrapers" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="adrianafilm.py">
+	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[COLORyellow]Adrianafilm[/COLOR]</summary>
-		<description lang="en">[COLOR blue]Adrianafilm Movies and TV. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels. The author does not host any of the content in this addon and takes no responsibility for content found[/COLOR].</description>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<summary lang="hr">Adriana film</summary>
+		<description lang="hr">[B]Adriana film[/B][CR] [B]***Lambda Sources Edition***[/B][CR][CR][COLOR blue]Adriana film filmovi i TV. Ovaj dodatak ne čini dio Media Centra za Kodi. Nemojte tražiti pomoć s ovim dodatkom iz bilo kojeg od službenih kanala za podršku Kodia. Autor ne posjeduje linkove za sadržaj u ovom dodatku i ne preuzima nikakvu odgovornost za pronađene sadržaje[/COLOR].</description>
+		<disclaimer lang="hr">Autor ovog dodatka ne sadrži bilo koji sadržaj koji se nalazi i nema vezu s bilo kojim davateljima sadržaja. Ovaj dodatak jednostavno pretražuje web stranice za sadržaj. Koristite se na vlastiti rizik!</disclaimer>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<assets>
-			<icon>icon.jpg</icon>
-			<fanart>fanart.png</fanart>
-    			<screenshot>resources/screenshots/slika-01.png</screenshot>
-    			<screenshot>resources/screenshots/slika-02.png</screenshot>
-    			<screenshot>resources/screenshots/slika-03.png</screenshot>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot></screenshot>
 		</assets>
 		<news></news>
 	</extension>

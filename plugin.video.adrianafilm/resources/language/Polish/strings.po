@@ -1,3 +1,6 @@
+# Addon Name: Adrianafilm
+# Addon id: plugin.video.samoborfilm
+# Addon Provider: I-A-C
 # Translators:
 # Translators:
 # Translators:
@@ -24,7 +27,7 @@
 # Xulek, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Yoda\n"
+"Project-Id-Version: Adrianafilm\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2017-05-30 09:11+0000\n"
 "Last-Translator: Viper2k4\n"
@@ -224,24 +227,24 @@ msgid "[B]SETTINGS[/B] : Providers"
 msgstr "[B]Ustawienia[/B]: Źródła"
 
 msgctxt "#32048"
-msgid "[B]Yoda[/B] : Downloads"
-msgstr "[B]Yoda[/B] : Pobieranie"
+msgid "[B]ADRIANA FILM[/B] : Downloads"
+msgstr "[B]ADRIANA FILM[/B] : Pobieranie"
 
 msgctxt "#32049"
-msgid "[B]Yoda[/B] : Viewtypes"
-msgstr "[B]Yoda[/B] : Styl wyświetlania"
+msgid "[B]ADRIANA FILM[/B] : Viewtypes"
+msgstr "[B]ADRIANA FILM[/B] : Styl wyświetlania"
 
 msgctxt "#32050"
-msgid "[B]Yoda[/B] : Clear providers..."
-msgstr "[B]Yoda[/B] : Wyczyść Źródła..."
+msgid "[B]ADRIANA FILM[/B] : Clear providers..."
+msgstr "[B]ADRIANA FILM[/B] : Wyczyść Źródła..."
 
 msgctxt "#32051"
-msgid "[B]Yoda[/B] : Clear metadata..."
-msgstr "[B]Yoda[/B] : Wyczyść metadane..."
+msgid "[B]ADRIANA FILM[/B] : Clear metadata..."
+msgstr "[B]ADRIANA FILM[/B] : Wyczyść metadane..."
 
 msgctxt "#32052"
-msgid "[B]Yoda[/B] : Clear cache..."
-msgstr "[B]Yoda[/B] : Wyczyść Cache..."
+msgid "[B]ADRIANA FILM[/B] : Clear cache..."
+msgstr "[B]ADRIANA FILM[/B] : Wyczyść Cache..."
 
 msgctxt "#32053"
 msgid "[I]Next Page[/I]"
@@ -272,8 +275,7 @@ msgid "CLICK HERE TO SAVE VIEW"
 msgstr "KLIKNIJ TUTAJ ABY ZAPISAĆ WIDOK"
 
 msgctxt "#32060"
-msgid ""
-"January|February|March|April|May|June|July|August|September|October|November|December"
+msgid "January|February|March|April|May|June|July|August|September|October|November|December"
 msgstr "Styczeń|Luty|Marzec|Kwiecień|Maj|Czerwiec|Lipiec|Sierpień|Wrzesień|Październik|Listopad|Grudzień"
 
 msgctxt "#32061"
@@ -297,12 +299,12 @@ msgid "Queue item"
 msgstr "Dodaj do Kolejki"
 
 msgctxt "#32066"
-msgid "Watched in Yoda"
-msgstr "Obejrzane w Yoda"
+msgid "Watched in Adrianafilm"
+msgstr "Obejrzane w Adrianafilm"
 
 msgctxt "#32067"
-msgid "Unwatched in Yoda"
-msgstr "Nieobejrzane w Yoda"
+msgid "Unwatched in Adrianafilm"
+msgstr "Nieobejrzane w Adrianafilm"
 
 msgctxt "#32068"
 msgid "Watched in Trakt"
@@ -572,13 +574,29 @@ msgctxt "#32360"
 msgid "Providers Language"
 msgstr "Język źródeł"
 
+msgctxt "#32363"
+msgid "HEVC"
+msgstr ""
+
+msgctxt "#32372"
+msgid "When playback ends..."
+msgstr ""
+
+msgctxt "#32373"
+msgid "Force container refresh"
+msgstr ""
+
+msgctxt "#32374"
+msgid "Enable Debug"
+msgstr ""
+
 msgctxt "#32401"
 msgid "No stream available"
 msgstr "Brak dostępnych źródeł"
 
 msgctxt "#32402"
-msgid "Playback outside Yoda is not allowed"
-msgstr "Odtwarzanie poza legacyem zabronione"
+msgid "Playback outside Adrianafilm is not allowed"
+msgstr "Odtwarzanie poza Adrianafilm em zabronione"
 
 msgctxt "#32403"
 msgid "Download"
@@ -697,20 +715,20 @@ msgid "DEBRID-SERVICE"
 msgstr "SERWIS-DEBRID"
 
 msgctxt "#32539"
-msgid "Configure Debrid Services in ResolveUrl Settings."
-msgstr "Skonfiguruj usługi Debrid w Ustawieniach ResolveUrl."
+msgid "Configure Debrid Services in ResolveURL Settings."
+msgstr "Skonfiguruj usługi Debrid w Ustawieniach ResolveURL."
 
 msgctxt "#32540"
-msgid "ResolveUrl Settings"
-msgstr "Ustawienia ResolveUrl"
+msgid "[B]RESOLVEURL[/B] : Settings"
+msgstr "Ustawienia [B]RESOLVEURL[/B]"
 
 msgctxt "#32541"
 msgid "Library"
 msgstr "Biblioteka"
 
 msgctxt "#32542"
-msgid "Yoda folders will be imported to library if they are added to media sources."
-msgstr "Foldery Yoda zostaną zaimportowane do biblioteki, jeśli zostaną dodane do źródeł multimedialnych."
+msgid "Adrianafilm folders will be imported to library if they are added to media sources."
+msgstr "Foldery Adrianafilm zostaną zaimportowane do biblioteki, jeśli zostaną dodane do źródeł multimedialnych."
 
 msgctxt "#32543"
 msgid "Movies"
@@ -765,24 +783,24 @@ msgid "Are you sure?"
 msgstr "Jesteś pewien?"
 
 msgctxt "#32556"
-msgid "[B]Yoda[/B] : Library"
-msgstr "[B]Yoda[/B] : Biblioteka"
+msgid "[B]ADRIANA FILM[/B] : Library"
+msgstr "[B]ADRIANA FILM[/B] : Biblioteka"
 
 msgctxt "#32557"
 msgid "[B]LIBRARY[/B] : Settings"
 msgstr "[B]BIBLIOTEKA[/B] : Ustawienia"
 
 msgctxt "#32558"
-msgid "[B]Yoda[/B] : Update library..."
-msgstr "[B]Yoda[/B] : Aktualizowanie biblioteki..."
+msgid "[B]ADRIANA FILM[/B] : Update library..."
+msgstr "[B]ADRIANA FILM[/B] : Aktualizowanie biblioteki..."
 
 msgctxt "#32559"
-msgid "[B]Yoda[/B] : Movie folder..."
-msgstr "[B]Yoda[/B] : Folder filmów..."
+msgid "[B]ADRIANA FILM[/B] : Movie folder..."
+msgstr "[B]ADRIANA FILM[/B] : Folder filmów..."
 
 msgctxt "#32560"
-msgid "[B]Yoda[/B] : TV folder..."
-msgstr "[B]Yoda[/B] : Folder telewizji..."
+msgid "[B]ADRIANA FILM[/B] : TV folder..."
+msgstr "[B]ADRIANA FILM[/B] : Folder telewizji..."
 
 msgctxt "#32561"
 msgid "[B]TRAKT[/B] : Import Collection..."
@@ -913,17 +931,45 @@ msgid "New search..."
 msgstr "Nowe szukanie..."
 
 msgctxt "#32604"
-msgid "[B]Yoda[/B] : Clear search history..."
-msgstr "[B]Yoda[/B] : Wyczyść historię wyszukiwania..."
+msgid "[B]ADRIANA FILM[/B] : Clear search history..."
+msgstr "[B]ADRIANA FILM[/B] : Wyczyść historię wyszukiwania..."
 
 msgctxt "#32605"
 msgid "Click to clear search history"
 msgstr "Naciśnij aby wyczyścić historię"
 
 msgctxt "#32606"
-msgid "Prem"
-msgstr "Prem"
+msgid "[COLOR=orange]Paid[/COLOR]"
+msgstr "[COLOR=orange]Paid[/COLOR]"
 
 msgctxt "#32607"
-msgid "Normal"
-msgstr "Normalny"
+msgid "[COLOR=orange]Free[/COLOR]"
+msgstr "[COLOR=orange]Free[/COLOR]"
+
+msgctxt "#32608"
+msgid "Auto Syncing Trakt Library"
+msgstr ""
+
+msgctxt "#32613"
+msgid "[B]ADRIANA FILM[/B] : Clear All Cache..."
+msgstr ""
+
+msgctxt "#32614"
+msgid "[B]ADRIANA FILM[/B] : Clear Meta Cache..."
+msgstr ""
+
+msgctxt "#32616"
+msgid "Debugging"
+msgstr ""
+
+msgctxt "#32617"
+msgid "Debug Log"
+msgstr ""
+
+msgctxt "#32618"
+msgid "Kodi Log"
+msgstr ""
+
+msgctxt "#32619"
+msgid "Addon Log"
+msgstr ""

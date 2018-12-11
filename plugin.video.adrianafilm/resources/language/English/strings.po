@@ -1,6 +1,6 @@
-# Addon Name: Yoda
-# Addon id: plugin.video.Yoda
-# Addon Provider: Yoda
+# Addon Name: Adrianafilm
+# Addon id: plugin.video.samoborfilm
+# Addon Provider: I-A-C
 # Translators:
 # Translators:
 # Translators:
@@ -19,7 +19,7 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Yoda\n"
+"Project-Id-Version: Adrianafilm\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2016-08-01 02:03+0000\n"
 "Last-Translator: lambda81\n"
@@ -220,23 +220,23 @@ msgid "[B]SETTINGS[/B] : Providers"
 msgstr ""
 
 msgctxt "#32048"
-msgid "[B]Yoda[/B] : Downloads"
+msgid "[B]EXODUS REDUX[/B] : Downloads"
 msgstr ""
 
 msgctxt "#32049"
-msgid "[B]Yoda[/B] : Viewtypes"
+msgid "[B]EXODUS REDUX[/B] : Viewtypes"
 msgstr ""
 
 msgctxt "#32050"
-msgid "[B]Yoda[/B] : Clear providers..."
+msgid "[B]EXODUS REDUX[/B] : Clear providers..."
 msgstr ""
 
 msgctxt "#32051"
-msgid "[B]Yoda[/B] : Clear metadata..."
+msgid "[B]EXODUS REDUX[/B] : Clear metadata..."
 msgstr ""
 
 msgctxt "#32052"
-msgid "[B]Yoda[/B] : Clear cache..."
+msgid "[B]EXODUS REDUX[/B] : Clear cache..."
 msgstr ""
 
 msgctxt "#32053"
@@ -292,11 +292,11 @@ msgid "Queue item"
 msgstr ""
 
 msgctxt "#32066"
-msgid "Watched in Yoda"
+msgid "Watched in Adrianafilm"
 msgstr ""
 
 msgctxt "#32067"
-msgid "Unwatched in Yoda"
+msgid "Unwatched in Adrianafilm"
 msgstr ""
 
 msgctxt "#32068"
@@ -583,16 +583,12 @@ msgctxt "#32374"
 msgid "Enable Debug"
 msgstr ""
 
-msgctxt "#32375"
-msgid "News and Updates"
-msgstr ""
-
 msgctxt "#32401"
 msgid "No stream available"
 msgstr ""
 
 msgctxt "#32402"
-msgid "Playback outside Yoda is not allowed"
+msgid "Playback outside Adrianafilm is not allowed"
 msgstr ""
 
 msgctxt "#32403"
@@ -712,11 +708,11 @@ msgid "DEBRID-SERVICE"
 msgstr ""
 
 msgctxt "#32539"
-msgid "Configure Debrid Services in URLResolver Settings."
+msgid "Configure Debrid Services in ResolveURL Settings."
 msgstr ""
 
 msgctxt "#32540"
-msgid "URLResolver Settings"
+msgid "[B]RESOLVEURL[/B] : Settings"
 msgstr ""
 
 msgctxt "#32541"
@@ -724,7 +720,7 @@ msgid "Library"
 msgstr ""
 
 msgctxt "#32542"
-msgid "Yoda folders will be imported to library if they are added to media sources."
+msgid "Adrianafilm folders will be imported to library if they are added to media sources."
 msgstr ""
 
 msgctxt "#32543"
@@ -780,7 +776,7 @@ msgid "Are you sure?"
 msgstr ""
 
 msgctxt "#32556"
-msgid "[B]Yoda[/B] : Library"
+msgid "[B]EXODUS REDUX[/B] : Library"
 msgstr ""
 
 msgctxt "#32557"
@@ -788,15 +784,15 @@ msgid "[B]LIBRARY[/B] : Settings"
 msgstr ""
 
 msgctxt "#32558"
-msgid "[B]Yoda[/B] : Update library..."
+msgid "[B]EXODUS REDUX[/B] : Update library..."
 msgstr ""
 
 msgctxt "#32559"
-msgid "[B]Yoda[/B] : Movie folder..."
+msgid "[B]EXODUS REDUX[/B] : Movie folder..."
 msgstr ""
 
 msgctxt "#32560"
-msgid "[B]Yoda[/B] : TV folder..."
+msgid "[B]EXODUS REDUX[/B] : TV folder..."
 msgstr ""
 
 msgctxt "#32561"
@@ -912,7 +908,7 @@ msgid "Getting genre information from Trakt"
 msgstr ""
 
 msgctxt "#32600"
-msgid "[COLOR yellow]Yoda Is Finding Your Link[/COLOR]"
+msgid "Preparing sources"
 msgstr ""
 
 msgctxt "#32601"
@@ -928,7 +924,7 @@ msgid "New search..."
 msgstr ""
 
 msgctxt "#32604"
-msgid "[B]Yoda[/B] : Clear search history..."
+msgid "[B]EXODUS REDUX[/B] : Clear search history..."
 msgstr ""
 
 msgctxt "#32605"
@@ -936,31 +932,23 @@ msgid "Click to clear search history"
 msgstr ""
 
 msgctxt "#32606"
-msgid "[COLOR=yellow]Paid[/COLOR]"
+msgid "Prem"
 msgstr ""
 
 msgctxt "#32607"
-msgid "[COLOR=red]Free[/COLOR]"
+msgid "Normal"
 msgstr ""
 
 msgctxt "#32608"
-msgid "Unaired Season/Episode Color"
-msgstr ""
-
-msgctxt "#32609"
-msgid "URL Resolver Settings"
+msgid "Auto Syncing Trakt Library"
 msgstr ""
 
 msgctxt "#32613"
-msgid "[B]Yoda[/B] : Clear All Cache..."
+msgid "[B]EXODUS REDUX[/B] : Clear All Cache..."
 msgstr ""
 
 msgctxt "#32614"
-msgid "[B]Yoda[/B] : Clear Meta Cache..."
-msgstr ""
-
-msgctxt "#32615"
-msgid "Check Host for Valid URL"
+msgid "[B]EXODUS REDUX[/B] : Clear Meta Cache..."
 msgstr ""
 
 msgctxt "#32616"
@@ -977,48 +965,4 @@ msgstr ""
 
 msgctxt "#32619"
 msgid "Addon Log"
-msgstr ""
-
-msgctxt "#32620"
-msgid "Podcasts"
-msgstr ""
-
-msgctxt "#32621"
-msgid "Navigation"
-msgstr ""
-
-msgctxt "#32622"
-msgid "Main Menu"
-msgstr ""
-
-msgctxt "#32623"
-msgid "Reviews and Trailers"
-msgstr ""
-
-msgctxt "#32625"
-msgid "Featured Podcasts"
-msgstr ""
-
-msgctxt "#32626"
-msgid "New Podcasts"
-msgstr ""
-
-msgctxt "#32627"
-msgid "Categories"
-msgstr ""
-
-msgctxt "#32628"
-msgid "[B]SETTINGS[/B] : Navigation"
-msgstr ""
-
-msgctxt "#32629"
-msgid "PodBay"
-msgstr ""
-
-msgctxt "#32630"
-msgid "Show Season 0 in Browse Seasons"
-msgstr ""
-
-msgctxt "#32631"
-msgid "Documentaries"
 msgstr ""
