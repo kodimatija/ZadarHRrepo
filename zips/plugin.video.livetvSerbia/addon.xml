@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.livetvSerbia"
        name="Live TV Serbia"
-       version="1.1.6"
+       version="1.1.9"
        provider-name="livetvSerbia">
   <requires>
    
@@ -9,16 +9,15 @@
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="1.9.5"/>
+    <import addon="script.module.simple.downloader" version="1.9.6"/>
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" optional="true"/>
-    <import addon="script.module.urlresolver" version="3.0.31"/>
+    <import addon="script.module.urlresolver" version="5.0.26"/>
     <import addon="script.module.simplejson" /> 
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>-->
+    <import addon="script.module.metahandler" version="2.5.1"/>
 	<import addon="script.module.futures"/>
 
   </requires>
@@ -29,11 +28,8 @@
     <summary lang="en">Live IPTV channels from Balkan</summary>
     <description lang="en">Watch IPTV channels from Balkan. 
 For more info visit our FB page @ facebook.com/livetvserbia
-<disclaimer lang="en">
-The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
-For DMCA Reports, please send message to our FB page.
-</disclaimer>
 	</description>
+	 <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
 			<forum>http://fb.com/livetvserbia</forum>
 		<website>http://livetvkodiserbia.com</website>
 		<source>http://livetvkodiserbia.com/kodi/repository</source>
@@ -47,6 +43,17 @@ For DMCA Reports, please send message to our FB page.
 		</assets>
 		
 		<news>
+V1.1.9
+- url fix
+
+V1.1.8
+- Common cache removed
+- URL Resolver added
+
+V1.1.7
+- Favorites fix
+- Security improvements
+
 v1.1.6
 - Youtube addon fix
 - Added screenshoots and info in addon installation

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-				<!--// Adriana TV Free Tv List Addon Hrvatski\\-->
 				
-<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.5" provider-name="MLAĐO">
+<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.6" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -13,8 +12,7 @@
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="script.maverick.pairwith" version="1.6"/>
-	<import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
 	<import addon="script.module.urlresolver" />
 	<import addon="script.module.simplejson" /> 
     <import addon="script.common.plugin.cache" version="2.5.2"/>
@@ -24,13 +22,15 @@
 	<import addon="plugin.video.adrianamovie" version="1.0.3" />
 	<import addon="plugin.video.adrianafilm" version="1.0.6"/>
 	<import addon="plugin.video.adrianasvijet" version="1.0.7"/>
-	</requires>
+  </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata"> 
 		<summary lang="hr_HR">Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode do strimova.</summary>
+		<description lang="en_GB"></description>
+		<news lang="en_GB"></news>		
+		<disclaimer lang="en_GB"></disclaimer>
 		<platform>all</platform>
-		<website></website>
-  </extension>
+	 </extension>
 </addon>

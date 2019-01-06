@@ -31,7 +31,6 @@ FANART = os.path.join(home, 'fanart.jpg')
 source_file = os.path.join(profile, 'source_file')
 functions_dir = profile
 
-
 #############################################################
 def runiskon(idfile):
   dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -178,7 +177,7 @@ def makeRequest(url, headers=None):
                     headers[n]=v
                     
             req = urllib2.Request(url,None,headers)
-            response = urllib2.urlopen(req)
+            response = urllib2.urlopen(req, timeout=99)
             data = response.read()
             response.close()
             return data
@@ -194,8 +193,6 @@ def makeRequest(url, headers=None):
 
 def getSources():
         try:
-            if os.path.exists(favorites) == True:
-                addDir('Favorites','url',4,os.path.join(home, 'resources', 'favorite.png'),FANART,'','','','')
             if addon.getSetting("browse_xml_database") == "true":
                 addDir('XML Database','http://xbmcplus.xb.funpic.de/www-data/filesystem/',15,icon,FANART,'','','','')
             if addon.getSetting("browse_community") == "true":
@@ -2510,11 +2507,13 @@ def addFavorite(name,url,iconimage,fanart,mode,playlist=None,regexs=None):
         except:
             pass
         if os.path.exists(favorites)==False:
+            os.makedirs(functions_dir)
             addon_log('Making Favorites File')
             favList.append((name,url,iconimage,fanart,mode,playlist,regexs))
             a = open(favorites, "w")
             a.write(json.dumps(favList))
             a.close()
+			
         else:
             addon_log('Appending Favorites')
             a = open(favorites).read()
@@ -2523,6 +2522,7 @@ def addFavorite(name,url,iconimage,fanart,mode,playlist=None,regexs=None):
             b = open(favorites, "w")
             b.write(json.dumps(data))
             b.close()
+            xbmcgui.Dialog().ok('Live TV Serbia', '\n[COLOR yellow]Complete![/COLOR]')
 
 
 def rmFavorite(name):
@@ -3103,7 +3103,7 @@ def get_epg(url, regex):
 
 def SKindex():
     addon_log("SKindex")
-    addDir('Favorites','Favorites',4,'http://goo.gl/TyDD6w' ,  FANART,'','','','')
+    addDir('Favorites','Favorites',4,'http://livetvkodiserbia.com/live/kanal/images/addon/icon/favorite.png' ,  FANART,'','','','')
     getData3(_Edit.MainBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
@@ -3219,12 +3219,13 @@ if not playitem =='':
     name,url,regexs=getItems(s,None,dontLink=True)
     mode=117 
 if mode==None:
-    #addon_log("getSources")
-    #getSources()
+    addon_log("getSources")
+    getSources()
     #os.system('python tv.py')
     dir_path = os.path.dirname(os.path.realpath(__file__))
     addon_log("Index@@@")
     SKindex()
+    xbmc.executebuiltin("Container.SetViewMode(500)")
     #os.system(dir_path+'\tv.py')
 
 elif mode==1:
