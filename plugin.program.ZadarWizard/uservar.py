@@ -7,7 +7,7 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'Zadar Wizard'
 EXCLUDES       = [ADDON_ID, 'plugin.program.ZadarWizard']
 # Text File with build info in it.
-BUILDFILE      = 'http://zadarbuild.com.hr/repo/Instalacija%20buildova-KLIK/ZWizard.xml'
+BUILDFILE      = 'http://zadarbuild.com.hr/buildfiles/ZWizard.xml'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
