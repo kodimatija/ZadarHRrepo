@@ -1512,6 +1512,37 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
+
+
+<addon id="plugin.video.VukovarusrcuTV" name="[B][I][COLOR red]Vukovar u srcu TV[/COLOR][/I][/B]" version="1.0" provider-name="Vukovarac">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+	<import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="hr_HR">Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode do strimova.</summary>
+		<description lang="en_GB"></description>
+		<news lang="en_GB"></news>
+		<disclaimer lang="en_GB"></disclaimer>
+		<platform>all</platform>
+	 </extension>
+</addon>
+
 <addon id="plugin.video.Yoda" version="1.1.4" name="[COLORgreen]Yoda[/COLOR]" provider-name="Yoda">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -1853,7 +1884,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.4" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.5" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -1869,22 +1900,14 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana</description>
 		<genre>all</genre>
 		<news>
-V-1.1.7
-Napunjeni addoni Adriana sport,xxx,kids,movies (all in one install), maknuti saturnusi
-uživajte
-zadarbuild.com.hr
-V-1.1.8
-Dodani Adriana film, world i sport
-Uživajte u gledanu
-zadarbuild.com.hr
-V-1.2.1
-Dodana skripta za uparivanje IP adrese
-V-1.2.2
-Dodan Terminator TV addon
 V-1.2.3
 Azurirana Adriana TV i AdrianaFilm
 V-1.2.4
 Azurirana Adriana Tv na V.1.1.6, azurirana livetvserbia
+V-1.2.5
+Dodan VukovaruSrcuTV addon
+Uživajte
+http://zadarbuild.com.hr
 </news>
 	</extension>
 </addon>

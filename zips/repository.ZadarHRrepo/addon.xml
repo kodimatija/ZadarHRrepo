@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.4" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.5" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -15,22 +15,14 @@
 		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana</description>
 		<genre>all</genre>
 		<news>
-V-1.1.7
-Napunjeni addoni Adriana sport,xxx,kids,movies (all in one install), maknuti saturnusi
-uživajte
-zadarbuild.com.hr
-V-1.1.8
-Dodani Adriana film, world i sport
-Uživajte u gledanu
-zadarbuild.com.hr
-V-1.2.1
-Dodana skripta za uparivanje IP adrese
-V-1.2.2
-Dodan Terminator TV addon
 V-1.2.3
 Azurirana Adriana TV i AdrianaFilm
 V-1.2.4
 Azurirana Adriana Tv na V.1.1.6, azurirana livetvserbia
+V-1.2.5
+Dodan VukovaruSrcuTV addon
+Uživajte
+http://zadarbuild.com.hr
 </news>
 	</extension>
 </addon>
