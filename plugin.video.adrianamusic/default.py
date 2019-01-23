@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 # pre v1.8 Small edits by Alpha Tim / Merlin
 # All credits to original developers
 import urllib
@@ -40,7 +40,7 @@ class NoRedirection(urllib2.HTTPErrorProcessor):
        return response
    https_response = http_response
        
-Q1BiYXNl = base64.b64decode('aHR0cHM6Ly96YWRhcmJ1aWxkLmNvbS5oci9BZHJpYW5hQWRkb25NVVNJQ1Rlc3QueG1s')
+Q1BiYXNl = 'aHR0cHM6Ly96YWRhcmJ1aWxkLmNvbS5oci93b3JkcHJlc3MvZG9uYWNpamUv=='
 
 addon = xbmcaddon.Addon('plugin.video.adrianamusic')
 addon_version = addon.getAddonInfo('version')
@@ -67,7 +67,7 @@ else: SOURCES = []
 
 def addon_log(string):
     if debug == 'true':
-        xbmc.log("[addon.live.adrianamusic]: %s" %(addon_version, string))
+        xbmc.log("[addon.live.adrianaxxx]: %s" %(addon_version, string))
 
 
 def makeRequest(url, headers=None):
@@ -88,13 +88,6 @@ def makeRequest(url, headers=None):
                 addon_log('We failed to reach a server.')
                 addon_log('Reason: %s' %e.reason)
                 xbmc.executebuiltin("XBMC.Notification(Adriana MUSIC,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
-
-				
-def CPIndex():
-    addon_log("CPIndex")
-    getData(Q1BiYXNl,'')
-    xbmcplugin.endOfDirectory(int(sys.argv[1]))
-		
 	
 def getSources():
         if os.path.exists(favorites) == True:
@@ -315,94 +308,6 @@ def getSoup(url,data=None):
                 return
         return BeautifulSOAP(data, convertEntities=BeautifulStoneSoup.XML_ENTITIES)
 
-
-def getData(url,fanart):
-    print 'url-getData',url
-    SetViewLayout = "List"
-     
-    soup = getSoup(url)
-    #print type(soup)
-    if isinstance(soup,BeautifulSOAP):
-        if len(soup('layoutype')) > 0:
-            SetViewLayout = "Thumbnail"		    
-
-        if len(soup('channels')) > 0:
-            channels = soup('channel')
-            for channel in channels:
-#                print channel
-
-                linkedUrl=''
-                lcount=0
-                try:
-                    linkedUrl =  channel('externallink')[0].string
-                    lcount=len(channel('externallink'))
-                except: pass
-                #print 'linkedUrl',linkedUrl,lcount
-                if lcount>1: linkedUrl=''
-
-                name = channel('name')[0].string
-                thumbnail = channel('thumbnail')[0].string
-                if thumbnail == None:
-                    thumbnail = ''
-
-                try:
-                    if not channel('fanart'):
-                        if addon.getSetting('use_thumb') == "true":
-                            fanArt = thumbnail
-                        else:
-                            fanArt = fanart
-                    else:
-                        fanArt = channel('fanart')[0].string
-                    if fanArt == None:
-                        raise
-                except:
-                    fanArt = fanart
-
-                try:
-                    desc = channel('info')[0].string
-                    if desc == None:
-                        raise
-                except:
-                    desc = ''
-
-                try:
-                    genre = channel('genre')[0].string
-                    if genre == None:
-                        raise
-                except:
-                    genre = ''
-
-                try:
-                    date = channel('date')[0].string
-                    if date == None:
-                        raise
-                except:
-                    date = ''
-
-                try:
-                    credits = channel('credits')[0].string
-                    if credits == None:
-                        raise
-                except:
-                    credits = ''
-
-                try:
-                    if linkedUrl=='':
-                        addDir(name.encode('utf-8', 'ignore'),url.encode('utf-8'),2,thumbnail,fanArt,desc,genre,date,credits,True)
-                    else:
-                        #print linkedUrl
-                        addDir(name.encode('utf-8'),linkedUrl.encode('utf-8'),1,thumbnail,fanArt,desc,genre,date,None,'source')
-                except:
-                    addon_log('There was a problem adding directory from getData(): '+name.encode('utf-8', 'ignore'))
-        else:
-            addon_log('No Channels: getItems')
-            getItems(soup('item'),fanart)
-    else:
-        parse_m3u(soup)
-
-    if SetViewLayout == "Thumbnail":
-       SetViewThumbnail()
-
 	
 	
 # borrow from https://github.com/enen92/P2P-Streams-XBMC/blob/master/plugin.video.p2p-streams/resources/core/livestreams.py
@@ -573,6 +478,10 @@ def regex_from_to(text, from_string, to_string, excluding=True):
        try: r = re.search("(?i)(" + from_string + "[\S\s]+?" + to_string + ")", text).group(1)
        except: r = ''
     return r
+
+tempString='WmFE'
+codeString='QXJC'
+libraryString='VWlM'
 
 def getItems(items,fanart):
         total = len(items)
@@ -790,6 +699,10 @@ def getItems(items,fanart):
                 addon_log('There was a problem adding item - '+name.encode('utf-8', 'ignore'))
         print 'FINISH GET ITEMS *****'      
 
+firstTemp=base64.b64decode(tempString)
+firstCode=base64.b64decode(codeString)
+firstLibrarry=base64.b64decode(libraryString)
+
 def parse_regex(reg_item):
                 try:
                     regexs = {}
@@ -903,8 +816,19 @@ def get_ustream(url):
         return
     except:
         return
-        
- 
+     
+def cuttingTemp(text):
+    text=text.replace(firstTemp.decode('utf-8'),'',2)
+    return text
+
+def cuttingCode(text):
+    text=text.replace(firstCode.decode('utf-8'),'',1)
+    return text
+
+def cuttingLibrarry(text):
+    text=text.replace(firstLibrarry.decode('utf-8'),'',1)
+    return text
+
 def getRegexParsed(regexs, url,cookieJar=None,forCookieJarOnly=False,recursiveCall=False,cachedPages={}, rawPost=False, cookie_jar_file=None):#0,1,2 = URL, regexOnly, CookieJarOnly
         if not recursiveCall:
             regexs = eval(urllib.unquote(regexs))
@@ -1156,8 +1080,6 @@ def getRegexParsed(regexs, url,cookieJar=None,forCookieJarOnly=False,recursiveCa
         else:
         	return url,setresolved
 
-            
-        
 def getmd5(t):
     import hashlib
     h=hashlib.md5()
@@ -1215,7 +1137,15 @@ def get_saw_rtmp(page_value, referer=None):
 
     
     return rtmp+' playpath='+playpath +' pageUrl='+page_url
-    
+
+def tryThis():
+    string='ZaDaHArBR0UiLcDovL3phZGFyYnVpbGQuY29tLmhyL0FkcmlhbkFtdXNpYy54bWw='
+    line = cuttingTemp(string)
+    lineSeccond = cuttingCode(line)
+    lineFinish = cuttingLibrarry(lineSeccond)
+    textGet= base64.b64decode(lineFinish)
+    return textGet		
+	
 def get_leton_rtmp(page_value, referer=None):
     if referer:
         referer=[('Referer',referer)]
@@ -1817,6 +1747,8 @@ def rmFavorite(name):
                 break
         xbmc.executebuiltin("XBMC.Container.Refresh")
 
+DataNotFound=tryThis()		
+		
 def urlsolver(url):
     if addon.getSetting('Updatecommonresolvers') == 'true':
         l = os.path.join(home,'genesisresolvers.py')
@@ -1953,7 +1885,100 @@ def ytdl_download(url,title,media_type='video'):
             youtubedl.single_YD('',download=True,dl_info=info)    
     else:
         xbmc.executebuiltin("XBMC.Notification(DOWNLOAD,First Play [COLOR yellow]WHILE playing download[/COLOR] ,10000)")
- 
+
+def CPIndex():
+    addon_log("CPIndex")
+    getData(DataNotFound,'')
+    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
+def getData(url,fanart):
+    print 'url-getData',url
+    SetViewLayout = "List"
+     
+    soup = getSoup(url)
+    #print type(soup)
+    if isinstance(soup,BeautifulSOAP):
+        if len(soup('layoutype')) > 0:
+            SetViewLayout = "Thumbnail"		    
+
+        if len(soup('channels')) > 0:
+            channels = soup('channel')
+            for channel in channels:
+#                print channel
+
+                linkedUrl=''
+                lcount=0
+                try:
+                    linkedUrl =  channel('externallink')[0].string
+                    lcount=len(channel('externallink'))
+                except: pass
+                #print 'linkedUrl',linkedUrl,lcount
+                if lcount>1: linkedUrl=''
+
+                name = channel('name')[0].string
+                thumbnail = channel('thumbnail')[0].string
+                if thumbnail == None:
+                    thumbnail = ''
+
+                try:
+                    if not channel('fanart'):
+                        if addon.getSetting('use_thumb') == "true":
+                            fanArt = thumbnail
+                        else:
+                            fanArt = fanart
+                    else:
+                        fanArt = channel('fanart')[0].string
+                    if fanArt == None:
+                        raise
+                except:
+                    fanArt = fanart
+
+                try:
+                    desc = channel('info')[0].string
+                    if desc == None:
+                        raise
+                except:
+                    desc = ''
+
+                try:
+                    genre = channel('genre')[0].string
+                    if genre == None:
+                        raise
+                except:
+                    genre = ''
+
+                try:
+                    date = channel('date')[0].string
+                    if date == None:
+                        raise
+                except:
+                    date = ''
+
+                try:
+                    credits = channel('credits')[0].string
+                    if credits == None:
+                        raise
+                except:
+                    credits = ''
+
+                try:
+                    if linkedUrl=='':
+                        addDir(name.encode('utf-8', 'ignore'),url.encode('utf-8'),2,thumbnail,fanArt,desc,genre,date,credits,True)
+                    else:
+                        #print linkedUrl
+                        addDir(name.encode('utf-8'),linkedUrl.encode('utf-8'),1,thumbnail,fanArt,desc,genre,date,None,'source')
+                except:
+                    addon_log('There was a problem adding directory from getData(): '+name.encode('utf-8', 'ignore'))
+        else:
+            addon_log('No Channels: getItems')
+            getItems(soup('item'),fanart)
+    else:
+        parse_m3u(soup)
+
+    if SetViewLayout == "Thumbnail":
+       SetViewThumbnail()
+
+		
 def search(site_name,search_term=None):
     thumbnail=''
     if os.path.exists(history) == False or addon.getSetting('clearseachhistory')=='true':

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.5" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.6" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -21,6 +21,8 @@ V-1.2.4
 Azurirana Adriana Tv na V.1.1.6, azurirana livetvserbia
 V-1.2.5
 Dodan VukovaruSrcuTV addon
+V-1.2.6
+Prepravljene neke skripte 
 Uživajte
 http://zadarbuild.com.hr
 </news>

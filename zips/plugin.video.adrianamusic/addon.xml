@@ -2,7 +2,7 @@
 
 				<!--// Adriana MUSIC Free Tv List Addon Hrvatski\\-->
 				
-<addon id="plugin.video.adrianamusic" name="[B][I][COLOR deeppink]Adriana MUSIC[/B][/COLOR][/I]" version="1.0.4" provider-name="MLAĐO">
+<addon id="plugin.video.adrianamusic" name="[B][I][COLOR deeppink]Adriana MUSIC[/B][/COLOR][/I]" version="1.0.5" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>

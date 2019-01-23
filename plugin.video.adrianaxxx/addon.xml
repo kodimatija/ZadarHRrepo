@@ -2,7 +2,7 @@
 
 				<!--// Adriana XXX Free Tv List Addon Hrvatski\\-->
 				
-<addon id="plugin.video.adrianaxxx" name="[B][I][COLOR blue]Adriana XXX[/B][/COLOR][/I]" version="1.0.2" provider-name="MLAĐO">
+<addon id="plugin.video.adrianaxxx" name="[B][I][COLOR blue]Adriana XXX[/B][/COLOR][/I]" version="1.0.3" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
