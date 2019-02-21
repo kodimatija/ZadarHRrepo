@@ -1,12 +1,28 @@
 # -*- coding: utf-8 -*-
-import urllib2,urllib
-import re,time
-import time,json,base64
-import cookielib,aes,os
+'''
+╭━━╮╱╱╱╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╱╭╮
+┃╭╮┃╱╱╱╱╱╱╱╱╱╭╯╰╮╱╱╱╱╱╱┃┃
+┃╰╯╰┳╮╭┳━━┳━━╋╮╭╋━━┳┳━╮┃╰━┳━━╮
+┃╭━╮┃┃┃┃╭╮┃╭╮┃┃┃┃━━╋┫╭╮┫╭╮┃╭╮┃
+┃╰━╯┃╰╯┃╰╯┃╭╮┃┃╰╋━━┃┃┃┃┃┃┃┃╰╯┃
+╰━━━┻━━┻━╮┣╯╰╯╰━┻━━┻┻╯╰┻╯╰┻━━╯
+╱╱╱╱╱╱╱╭━╯┃
+╱╱╱╱╱╱╱╰━━╯
+'''
 
+import sys
+import traceback
+import urllib2
+import urllib
+import re
+import time
+import json
+import base64
+import cookielib
+import aes
+import requests
 
-
-BASEURL='http://www.sport365.live/pl/main'
+BASEURL='http://www.sport365.live/en/main'
 UA='Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
 
 def fixForEPG(item):
@@ -60,7 +76,15 @@ def getChannels(addheader=False):
             ret = ret[0]
             print 'key %s'%ret
             break
-    url='http://www.sport365.live/pl/events/-/1/-/-/120'
+
+    from datetime import datetime
+    ts = time.time()
+    utc_offset = (datetime.fromtimestamp(ts) -
+                  datetime.utcfromtimestamp(ts)).total_seconds()
+
+    minutes = int(utc_offset) / 60
+    url = 'http://www.sport365.live/en/events/-/1/-/-/' + str(minutes)
+
     content = getUrl(url)
     ids = [(a.start(), a.end()) for a in re.finditer('onClick=', content)]
     ids.append( (-1,-1) )
@@ -78,10 +102,11 @@ def getChannels(addheader=False):
             url = 'http://www.sport365.live/en/links/%s/1@%s'%(event.split('_')[-1],ret)
             etime,title1= t[:2]
             lang = t[-1]
-            quality =  t[-2].replace('&nbsp;',',') if len(t)==4 else ''
-            title = '%s%s: [COLOR blue]%s[/COLOR] %s'%(online,etime,title1,title2[0])
-            code=quality+lang
-            out.append({'title':title,'tvid':'','url':url,'group':'','urlepg':'','code':code})
+            quality = t[-2].replace('&nbsp;', '') if 'nbsp' in t[-2] else 'SD'
+            qualang = '[COLOR gold]%s-%s[/COLOR]' % (lang, quality)
+            title = '%s%s: [COLOR blue]%s[/COLOR] %s, %s' % (online, etime, title1, qualang, title2[0])
+            code = quality + lang
+            out.append({'title': title, 'tvid': '', 'url': url, 'group': '', 'urlepg': '', 'code': code})
     return out
 
 def getStreams(url):
@@ -108,21 +133,32 @@ def getStreams(url):
 #item['url']=
 # link='http://www.realstream.pw/player/57e8fae5c0dcd381780526/4/13/57e9650473aff/AKBarsKazan-DinamoMinsk/768/432'
 def getChannelVideo(item):
-    content = getUrl(item.get('url'),useCookies=True)
-    links=re.compile('(http://www.[^\.]+.pw/(?!&#)[^"]+)', re.IGNORECASE + re.DOTALL + re.MULTILINE + re.UNICODE).findall(content)
-    link = [x for x in links if '&#' in x] 
+    s = requests.Session()
+    header = {'User-Agent': UA,
+              'Referer': item.get('url')}
+    content = s.get(item.get('url'), headers=header).content
+    import uuid
+    hash = uuid.uuid4().hex
+    url = re.findall(r'location.replace\(\'([^\']+)', content)[0]
+    uri = url + hash
+    # xbmc.log('@#@CHANNEL-VIDEO-URI: %s' % uri, xbmc.LOGNOTICE)
+    content = s.get(uri, headers=header).content
+
+    links = re.compile('(http://www.[^\.]+.pw/(?!&#)[^"]+)',
+                       re.IGNORECASE + re.DOTALL + re.MULTILINE + re.UNICODE).findall(content)
+    link = [x for x in links if '&#' in x]
     if link:
-        link=re.sub(r'&#(\d+);', lambda x: chr(int(x.group(1))), link[0])
-        header = {'User-Agent':UA,
-                  'Referer':item.get('url')}
-        data = getUrl(link,header=header,useCookies=True)
-        f=re.compile('.*?name="f"\s*value=["\']([^"\']+)["\']').findall(data)
-        d=re.compile('.*?name="d"\s*value=["\']([^"\']+)["\']').findall(data)
-        r=re.compile('.*?name="r"\s*value=["\']([^"\']+)["\']').findall(data)
-        action=re.compile('[\'"]action[\'"][,\s]*[\'"](http.*?)[\'"]').findall(data)
-        srcs=re.compile('src=[\'"](.*?)[\'"]').findall(data)
+        link = re.sub(r'&#(\d+);', lambda x: chr(int(x.group(1))), link[0])
+        data = s.get(link, headers=header).content
+        # xbmc.log('@#@CHANNEL-VIDEO-DATA: %s' % data, xbmc.LOGNOTICE)
+        f = re.compile('.*?name="f"\s*value=["\']([^"\']+)["\']').findall(data)
+        d = re.compile('.*?name="d"\s*value=["\']([^"\']+)["\']').findall(data)
+        r = re.compile('.*?name="r"\s*value=["\']([^"\']+)["\']').findall(data)
+        b = re.compile('.*?name="b"\s*value=["\']([^"\']+)["\']').findall(data)
+        action = re.compile('[\'"]action[\'"][,\s]*[\'"](http.*?)[\'"]').findall(data)
+        srcs = re.compile('src=[\'"](.*?)[\'"]').findall(data)
         if f and r and d and action:
-            payload=urllib.urlencode({'d':d[0],'f':f[0],'r':r[0]})
+            payload = urllib.urlencode({'b': b[0], 'd': d[0], 'f': f[0], 'r': r[0]})
             data2,c= getUrlc(action[0],payload,header=header,useCookies=True)
             link=re.compile('\([\'"][^"\']+[\'"], [\'"][^"\']+[\'"], [\'"]([^"\']+)[\'"], 1\)').findall(data2)
             enc_data=json.loads(base64.b64decode(link[0]))
@@ -190,13 +226,13 @@ class JsUnwiser:
         #print 'sJavascript',sJavascript
         page_value=""
         try:        
-            ss="w,i,s,e=("+sJavascript+')' 
+            ss = "w,i,s,e=("+sJavascript+')'
             exec (ss)
             page_value=self.__unpack(w,i,s,e)
         except: traceback.print_exc(file=sys.stdout)
         return page_value
         
-    def __unpack( self,w, i, s, e):
+    def __unpack( self, w, i, s, e):
         lIll = 0;
         ll1I = 0;
         Il1l = 0;

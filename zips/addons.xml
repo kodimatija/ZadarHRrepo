@@ -885,31 +885,32 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.adrianasport.live" name="Adrianasport" version="1.0.6" provider-name="ĐOMLA">
+<addon id="plugin.video.adrianasport.live" name="[B][I][COLOR blue]Adrianasport[/B][/COLOR][/I]" version="2.0.6" provider-name="ĐOMLA">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="service.cronxbmc" optional="true"/>
+        <import addon="script.module.requests" version="2.19.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Adrianasport</summary>
-    <description lang="en">Adrianasport</description>
-    <disclaimer lang="en">
-Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode do strimova.</disclaimer>
-    <language></language>
+    <description lang="en">Ovaj dodatak ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode do strimova.</description>
+    <disclaimer lang="en">Adrianasport Live ne pruža vlastite tokove. Kvaliteta, sadržaj i autorska prava strujanja su odgovornost web-lokacije izvornog sadrzaja.</disclaimer>
+    <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
+    <website>https://bugatsinho.github.io</website>
+    <twitter>@bugatsinho</twitter>
   <assets>
     <icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
+    <fanart>fanart.png</fanart>
   </assets>
   <news>
-   Pierwsza wersja :)
+      -Fork version 1.0 by GalAnonim and fixed it!
+      -Add also language of the stream and quality
+      -Change Base Url to fix times issues due to timezones
   </news>
   </extension>
 </addon>
@@ -1406,6 +1407,37 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
+
+
+<addon id="plugin.video.RobinHood" name="[B][COLOR lime]Robin Hood[/B][/COLOR]" version="1.0.5" provider-name="Tojelako">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+	<import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Opis </summary>
+		<description lang="en_GB"></description>
+		<news lang="en_GB"></news>
+		<disclaimer lang="en_GB"></disclaimer>
+		<platform>all</platform>
+	 </extension>
+</addon>
+
 <addon id="plugin.video.RobinHoodCinema" name="[B][I][COLOR gold]Robin Hood Cinema [/B][/I][/COLOR]" version="1.0" provider-name="Tojelako">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -1435,6 +1467,68 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <website></website>
         <video_guide></video_guide>
     </extension>
+</addon>
+
+
+
+<addon id="plugin.video.RobinHoodFilmovizija" name="Robin Hood Filmovizija" version="1.0.5" provider-name="Tojelako">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+	<import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Domaci Filmovi I Serije </summary>
+		<description lang="en_GB"></description>
+		<news lang="en_GB"></news>
+		<disclaimer lang="en_GB"></disclaimer>
+		<platform>all</platform>
+	 </extension>
+</addon>
+
+
+
+<addon id="plugin.video.RobinHoodTv" name="[B][COLOR=lime]Robin Hood TV[/B][/COLOR]" version="1.1.2" provider-name="RobinHoodTv">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+	<import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Balkan World iptv</summary>
+		<description lang="en_GB">Balkan World Iptv by Robin Hood</description>
+		<news lang="en_GB"></news>
+		<disclaimer lang="en_GB"></disclaimer>
+		<platform>all</platform>
+	 </extension>
 </addon>
 
 <addon id="plugin.video.sport365.live" name="Sport365" version="1.0" provider-name="GalAnonim">
@@ -1884,7 +1978,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.6" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.7" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -1908,6 +2002,8 @@ V-1.2.5
 Dodan VukovaruSrcuTV addon
 V-1.2.6
 Prepravljene neke skripte
+V-1.2.7
+Azurirana adriana sport dodani roobinhood addoni
 Uživajte
 http://zadarbuild.com.hr
 </news>

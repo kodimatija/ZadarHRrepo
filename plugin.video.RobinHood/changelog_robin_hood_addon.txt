@@ -1,0 +1,13 @@
+Verzija 1.0.1
+- Pocetna verzija
+Verzija 1.0.2
+- Prva verzija
+Verzija 1.0.3
+- Dodavanje programa
+verzija 1.0.4
+- Dodavanje dodavanje programa
+Version 1.0.5
+- Ispravljanje gresaka i nadogradnja
+Verzija 1.0.5
+- Promjena servera
+
