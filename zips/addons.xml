@@ -731,7 +731,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.ZadarWizard" name="Zadar Wizard" version="1.0.1" provider-name="ZDTeam">
+<addon id="plugin.program.ZadarWizard" name="Zadar Wizard" version="1.0.1" provider-name="ZadarTeam">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -741,8 +741,14 @@
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Zadar Wizard</summary>
-    <description lang="en">Zadar Wizard Buldovi od autora Zadar Team. Velika zahvala na izradi ToJeLako.</description>
-    <platform>all</platform>
+    <description lang="en">Zadar Wizard Buldovi od autora Zadar Team. Novi wizard prilagoden za sve verzije.</description>
+	<disclaimer lang="en"></disclaimer>
+	<news>v1.0.1 (2019-02-25)</news>
+	<platform>all</platform>
+	<language>en</language>
+	<license>GNU GENERAL PUBLIC LICENSE Version 3</license>
+	<email></email>
+	<website>http://zadarbuild.com.hr</website>
   </extension>
 </addon>
 
@@ -1978,7 +1984,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.7" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.8" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -2004,6 +2010,8 @@ V-1.2.6
 Prepravljene neke skripte
 V-1.2.7
 Azurirana adriana sport dodani roobinhood addoni
+V-1.2.8
+Azuiran ZadarWizard na novu verziju, prilagoden za sve verzije
 Uživajte
 http://zadarbuild.com.hr
 </news>

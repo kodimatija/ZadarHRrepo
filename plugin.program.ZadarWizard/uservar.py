@@ -1,17 +1,28 @@
 import os, xbmc, xbmcaddon
 
 #########################################################
+### Global Variables ####################################
+#########################################################
+PATH           = xbmcaddon.Addon().getAddonInfo('path')
+ART            = os.path.join(PATH, 'resources', 'art')
+#########################################################
+ 
+#########################################################
 ### User Edit Variables #################################
 #########################################################
 ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
-ADDONTITLE     = 'Zadar Wizard'
+ADDONTITLE     = 'ZadarWizard'
+BUILDERNAME    = 'ZadarBuild'
 EXCLUDES       = [ADDON_ID, 'plugin.program.ZadarWizard']
+# Enable/Disable the text file caching with 'Yes' or 'No' and age being how often it rechecks in minutes
+CACHETEXT      = 'Yes'
+CACHEAGE       = 5
 # Text File with build info in it.
-BUILDFILE      = 'http://zadarbuild.com.hr/buildfiles/ZWizard.xml'
-# How often you would list it to check for build updates in days
+BUILDFILE      = 'http://zadarbuild.com.hr/buildfiles/Kodi18/ZWizard18.txt'
+# How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
-# Text File with apk info in it.
+# Text File with apk info in it.  Leave as 'http://' to ignore
 APKFILE        = 'http://'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
 YOUTUBETITLE   = ''
@@ -20,33 +31,31 @@ YOUTUBEFILE    = 'http://'
 ADDONFILE      = 'http://'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE   = 'http://'
-
-# Dont need to edit just here for icons stored locally
-PATH           = xbmcaddon.Addon().getAddonInfo('path')
-ART            = os.path.join(PATH, 'resources', 'art')
+#########################################################
 
 #########################################################
-### THEMING MENU ITEMS ##################################
+### Theming Menu Items ##################################
 #########################################################
 # If you want to use locally stored icons the place them in the Resources/Art/
 # folder of the wizard then use os.path.join(ART, 'imagename.png')
 # do not place quotes around os.path.join
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
-#           ICONSETTINGS  = 'https://srbijakodi.000webhostapp.com/Zadar Wizard/icon.png'
+#           ICONSETTINGS  = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png'
 # Leave as http:// for default icon
 ICONBUILDS     = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
-ICONMAINT      = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
-ICONAPK        = 'http://'
+ICONMAINT      = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4http://'
+ICONSPEED      = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
+ICONAPK        = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
 ICONADDONS     = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
-ICONYOUTUBE    = 'http://'
-ICONSAVE       = 'http://'
-ICONTRAKT      = 'http://'
+ICONYOUTUBE    = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
+ICONSAVE       = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
+ICONTRAKT      = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
 ICONREAL       = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
-ICONLOGIN      = 'http://'
-ICONCONTACT    = 'http://'
+ICONLOGIN      = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
+ICONCONTACT    = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
 ICONSETTINGS   = 'http://zadarbuild.com.hr/buildfiles/Slike/zadar.png?fbclid=IwAR0hGGewC0w-7KnEdATWJTZgdFSmugQrLMYaEr-MYlWl9Tlh-kjufAxbGr4'
-# Hide the ====== seperators 'Yes' or 'No'
-HIDESPACERS    = 'Yes'
+# Hide the section seperators 'Yes' or 'No'
+HIDESPACERS    = 'No'
 # Character used in seperator
 SPACER         = '='
 
@@ -67,48 +76,54 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 
 # Message for Contact Page
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
-HIDECONTACT    = 'Yes'
+HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = 'Thank you for choosing Aftermath Wizard.\r\n\r\nContact us on facebook at http://facebook.com'
+CONTACT        = 'Hvala sto se izabrali Zadar Wizard'
 #Images used for the contact window.  http:// for default icon and fanart
 CONTACTICON    = 'http://'
 CONTACTFANART  = 'http://'
 #########################################################
 
 #########################################################
-### AUTO UPDATE #########################################
-########## FOR THOSE WITH NO REPO #######################
+### Auto Update                   #######################
+###        For Those With No Repo #######################
+#########################################################
 # Enable Auto Update 'Yes' or 'No'
-AUTOUPDATE     = 'No'
+AUTOUPDATE     = 'Yes'
 # Url to wizard version
-WIZARDFILE     = ''
+WIZARDFILE     = 'http://zadarbuild.com.hr/repo/Build install-->/plugin.program.zadarwizard.zip'
 #########################################################
 
 #########################################################
-### AUTO INSTALL ########################################
-########## REPO IF NOT INSTALLED ########################
+### Auto Install                 ########################
+###        Repo If Not Installed ########################
+#########################################################
 # Enable Auto Install 'Yes' or 'No'
 AUTOINSTALL    = 'No'
 # Addon ID for the repository
-REPOID         = ''
+REPOID         = 'repository.ZadarHRrepo'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML   = ''
+REPOADDONXML   = 'https://raw.githubusercontent.com/kodimatija/ZadarHRrepo/master/zips/addons.xml'
 # Url to folder zip is located in
-REPOZIPURL     = ''
+REPOZIPURL     = 'https://raw.githubusercontent.com/kodimatija/ZadarHRrepo/master/zips/repository.ZadarHRrepo'
 #########################################################
 
 #########################################################
-### NOTIFICATION WINDOW##################################
+### Notification Window #################################
 #########################################################
 # Enable Notification screen Yes or No
-ENABLE         = 'Yes'
+ENABLE         = 'No'
 # Url to notification file
-NOTIFICATION   = ''
+NOTIFICATION   = 'http://'
 # Use either 'Text' or 'Image'
 HEADERTYPE     = ''
+# Font size of header
+FONTHEADER     = ''
 HEADERMESSAGE  = ''
 # url to image if using Image 424x180
-HEADERIMAGE    = ''
+HEADERIMAGE    = 'http://'
+# Font for Notification Window
+FONTSETTINGS   = ''
 # Background for Notification Window
-BACKGROUND     = ''
+BACKGROUND     = 'http://'
 #########################################################
