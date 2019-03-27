@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 				
-<addon id="plugin.video.RobinHoodTv" name="[B][COLOR=lime]Robin Hood TV[/B][/COLOR]" version="1.1.2" provider-name="RobinHoodTv">
+<addon id="plugin.video.RobinHoodTv" name="[B][COLORlime]Robin Hood TV[/COLOR][/B]" version="1.1.3" provider-name="RobinHoodTv">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
