@@ -849,6 +849,36 @@
   </extension>
 </addon>
 
+
+				<!--// Adriana Europe Free Tv List Addon Hrvatski\\-->
+
+<addon id="plugin.video.adrianaeurope" name="[COLOR orangered]Adriana Europe[/COLOR]" version="1.0" provider-name="KZBH">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+	<import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="hr_HR">Ovaj add-on ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode do strimova.</summary>
+		<platform>all</platform>
+		<website></website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.adrianafilm" version="1.0.6" name="[B][I][COLORgold]Adrianafilm[/B][/COLOR][/I]" provider-name="ĐOMLA">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -985,60 +1015,6 @@
     <summary lang="en">adrianasexkino</summary>
     <description lang="en">XXX Addon for www.adrianasexkino</description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.adrianasport.live" name="[B][I][COLOR blue]Adrianasport[/B][/COLOR][/I]" version="3.0.6" provider-name="ĐOMLA">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="service.cronxbmc" optional="true"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Adrianasport</summary>
-    <description lang="en">Ovaj dodatak ne sadrzi nikakav sadrzaj unutar add-ona vec samo linkove koji vode do strimova.</description>
-    <disclaimer lang="en">Adrianasport Live ne pruža vlastite tokove. Kvaliteta, sadržaj i autorska prava strujanja su odgovornost web-lokacije izvornog sadrzaja.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>https://bugatsinho.github.io</website>
-    <twitter>@bugatsinho</twitter>
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.png</fanart>
-  </assets>
-  <news>
-      -Fork version 1.0 by GalAnonim and fixed it!
-      -Add also language of the stream and quality
-      -Change Base Url to fix times issues due to timezones
-  </news>
-  </extension>
-</addon>
-
-<addon id="plugin.video.adrianasvijet" name="[B][I][COLOR brown]Adriana SVIJET[/B][/COLOR][/I]" version="1.0.7" provider-name="MLAĐO">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb"></summary>
-    <description lang="en_gb"></description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
   </extension>
 </addon>
 
@@ -1197,50 +1173,6 @@ Fixed search issue caused by character accents
 		<disclaimer lang="en_GB"></disclaimer>
 		<platform>all</platform>
 	 </extension>
-</addon>
-
-<addon id="plugin.video.kidsnation" name="Kids Nation" version="0.0.4" provider-name="MuadDib">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <summary lang="en">Top content aimed at learning and development for children.</summary>
-    <description lang="en">No Content Is Hosted By Us. Any Issues With The Add-On Or You Have A Request Hit Me Up On Twitter</description>
-    <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-    <genre>kids</genre>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.KidsPlanet" name="KidsPlanet" version="1.0" provider-name="@KodinityTV">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-        <import addon="script.module.resolveurl" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en">KidsPlanet - Kids AIO Add-On</summary>
-      <description lang="en">KidsPlanet - Kids AIO Add-On Including Movies, TV Shows + Many More</description>
-      <disclaimer lang="en">@KodinityTV Does Not Host Any Of The Content Found In This Add-On - This Add-On Simply Searches The Web For Content</disclaimer>
-      <platform>all</platform>
-        <website></website>
-        <video_guide></video_guide>
-    </extension>
 </addon>
 
 <addon id="plugin.video.kmER" version="0.1.0" name="Kid's Movies" provider-name="Mr Entertainment">
@@ -1423,37 +1355,6 @@ Initial Release
   </extension>
 </addon>
 
-<addon id="plugin.video.NevenaCinema" name="[B][I][COLOR gold]Nevena Cinema [/B][/I][/COLOR]" version="1.5" provider-name="Tojelako">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio" version="0.9.9.4.3" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-        <import addon="script.module.resolveurl" />
-		<import addon="script.module.NevenaCinema" version="" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en">Nevena Cinema</summary>
-      <description lang="en">Sports</description>
-      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-      <platform>all</platform>
-	      <assets>
-     <icon>icon.gif</icon>
-     <fanart>fanart.jpg</fanart>
-     </assets>
-        <website></website>
-        <video_guide></video_guide>
-    </extension>
-</addon>
-
 <addon id="plugin.video.placenta" version="1.3.7" name="Placenta" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -1584,75 +1485,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<disclaimer lang="en_GB"></disclaimer>
 		<platform>all</platform>
 	 </extension>
-</addon>
-
-<addon id="plugin.video.RobinHoodCinema" name="[B][I][COLOR lime]Robin Hood Cinema [/B][/I][/COLOR]" version="1.0" provider-name="Tojelako">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio" version="0.9.9.4.3" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-        <import addon="script.module.resolveurl" />
-		<import addon="script.module.NevenaCinema" version="" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en">[B][I][COLOR green]Robin Hood Cinema [/B][/I][/COLOR]</summary>
-      <description lang="en">Sports</description>
-      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-      <platform>all</platform>
-	      <assets>
-     <icon>icon.png</icon>
-     <fanart>fanart.jpg</fanart>
-     </assets>
-        <website></website>
-        <video_guide></video_guide>
-    </extension>
-</addon>
-
-
-
-
-<addon id="plugin.video.RobinHoodFilmovizija" name="[B][COLOR lime]Robin Hood Filmovizija[/B][/COLOR]" version="1.0.6" provider-name="Tojelako">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-	<import addon="script.video.F4mProxy" />
-	<import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="plugin.video.live.streamspro" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-		<summary lang="hr_HR"></summary>
-		<summary lang="en_GB">[B][COLOR lime]Domaci Filmovi I Serije[/B][/COLOR] </summary>
-		<description lang="en_GB">Domaci Filmovi i Serije deciji sinhronizovani filmovi</description>
-		<description lang="en_GB"></description>
-		<news lang="hr_HR"></news>
-		<news lang="en_GB"></news>
-		<disclaimer lang="hr_HR"></disclaimer>
-		<disclaimer lang="en_GB"></disclaimer>
-		<platform>all</platform>
-		<website>http://RobinHoodFilmovizijabuild.com.hr</website>
-  </extension>
 </addon>
 
 
@@ -1821,34 +1653,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		</assets>
 		<news></news>
 	</extension>
-</addon>
-
-<addon id="plugin.video.youporn"
-	     name="YouPorn"
-	     version="3.00.001"
-	     provider-name="Echo Coder">
-  <requires>
-	<import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.urlresolver.xxx"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">OVER 18 ONLY - Support is available https://github.com/Colossal1/plugin.video.youporn/issues</summary>
-    <description lang="en">YouPorn Scraping by Echo Coder
-
-Skin and code for skin by Demonstratorz</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>https://github.com/Colossal1/plugin.video.youporn</forum>
-    <website>https://github.com/Colossal1/plugin.video.youporn</website>
-    <email>echocoderxbmc@protonmail.com</email>
-  </extension>
 </addon>
 
 <addon id="plugin.video.youtube" name="YouTube" version="6.4.0" provider-name="anxdpanic, bromix">
@@ -2144,7 +1948,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.2.9" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.0" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -2172,6 +1976,8 @@ V-1.2.7
 Azurirana adriana sport dodani roobinhood addoni
 V-1.2.8
 Azuiran ZadarWizard na novu verziju, prilagoden za sve verzije
+V-1.3.0
+Dodana Adriana Europe
 Uživajte
 http://zadarbuild.com.hr
 </news>
