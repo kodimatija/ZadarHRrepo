@@ -1020,7 +1020,7 @@
 
 
 
-<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.7" provider-name="MLAĐO">
+<addon id="plugin.video.adrianatv" name="[B][I][COLOR orangered]Adriana TV[/COLOR][/I][/B]" version="1.1.8" provider-name="MLAĐO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -1036,11 +1036,6 @@
 	<import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="plugin.video.adrianakids" version="1.0.3" />
-	<import addon="plugin.video.adrianamusic" version="1.0.5" />
-	<import addon="plugin.video.adrianamovie" version="1.0.4" />
-	<import addon="plugin.video.adrianafilm" version="1.0.6"/>
-	<import addon="plugin.video.adrianasvijet" version="1.0.7"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -1948,7 +1943,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.0" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.1" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
