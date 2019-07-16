@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.tojelako" name="[B]Tojelako Repository[/B]" version="1.6" provider-name="Tojelako">
+<addon id="repository.tojelako" name="[B]Tojelako Repository[/B]" version="1.7" provider-name="Tojelako">
 	<extension point="xbmc.addon.repository" name="Tojelako repository">
 	
-
+<dir>
+		<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>	
+		<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+	</dir>
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+    </dir>
 	
 	
 	

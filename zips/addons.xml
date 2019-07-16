@@ -1139,37 +1139,6 @@ Fixed search issue caused by character accents
     </extension>
 </addon>
 
-
-
-<addon id="plugin.video.JupiterAddon" name="Jupiter Addon" version="1.0.0" provider-name="racunarisd">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-	<import addon="script.module.urlresolver" />
-	<import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Opis </summary>
-		<description lang="en_GB"></description>
-		<news lang="en_GB"></news>
-		<disclaimer lang="en_GB"></disclaimer>
-		<platform>all</platform>
-	 </extension>
-</addon>
-
 <addon id="plugin.video.kmER" version="0.1.0" name="Kid's Movies" provider-name="Mr Entertainment">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1350,6 +1319,51 @@ Initial Release
   </extension>
 </addon>
 
+<addon id="plugin.video.NevenaCinema" name="[B][I][COLOR gold]Nevena Cinema [/B][/I][/COLOR]" version="2.0" provider-name="Tojelako">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.9.4.3" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+		<import addon="script.module.NevenaCinema" version="" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">Nevena Cinema</summary>
+      <description lang="en">Sports</description>
+      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+      <platform>all</platform>
+	      <assets>
+     <icon>icon.gif</icon>
+     <fanart>fanart.jpg</fanart>
+     </assets>
+        <website></website>
+        <video_guide></video_guide>
+    </extension>
+</addon>
+
+<addon id="plugin.video.petrinja" name="IPTV Petrinja" version="1.0.0" provider-name="Zadar Build">
+    <requires>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>IPTV Petrinja</summary>
+        <description>IPTV Petrinja</description>
+    </extension>
+</addon>
+
 <addon id="plugin.video.placenta" version="1.3.7" name="Placenta" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -1449,37 +1463,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
             <screenshot>resources/screenshots/webui.png</screenshot>
         </assets>
     </extension>
-</addon>
-
-
-
-<addon id="plugin.video.RobinHood" name="[B][COLOR lime]Robin Hood[/B][/COLOR]" version="1.0.5" provider-name="Tojelako">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-	<import addon="script.module.urlresolver" />
-	<import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Opis </summary>
-		<description lang="en_GB"></description>
-		<news lang="en_GB"></news>
-		<disclaimer lang="en_GB"></disclaimer>
-		<platform>all</platform>
-	 </extension>
 </addon>
 
 
@@ -1773,24 +1756,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
         </extension>
     </addon>
 
-<addon id="repository.KM" name=".[COLOR red]KM[/COLOR] repo" version="2.0.0" provider-name="KodiMatija">
-	<extension point="xbmc.addon.repository" name=".KM Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
-		</dir>
-		<info compressed="false">https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">KM offical repo</summary>
-		<description lang="en">U ovom repu cete naci najnovije addone i postavke za podrucje ExYu</description>
-		<genre></genre>
-	</extension>
-</addon>
-
 <addon id="repository.kodibae" name="[COLOR pink]Kodi Bae Repository[/COLOR]" version="1.0.0" provider-name="kodibae">
     <extension point="xbmc.addon.repository" name="[COLOR pink]Kodi Bae Repository[/COLOR]">
     <dir>
@@ -1869,10 +1834,24 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="repository.tojelako" name="[B]Tojelako Repository[/B]" version="1.6" provider-name="Tojelako">
+<addon id="repository.tojelako" name="[B]Tojelako Repository[/B]" version="1.7" provider-name="Tojelako">
 	<extension point="xbmc.addon.repository" name="Tojelako repository">
 
-
+<dir>
+		<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+	</dir>
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+    </dir>
 
 
 
@@ -1943,7 +1922,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.1" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.2" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
