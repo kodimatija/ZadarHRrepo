@@ -1156,6 +1156,36 @@ Fixed search issue caused by character accents
     </extension>
 </addon>
 
+
+				<!--// Kufrin Addon | Watch Netflix 4 free \\-->
+
+<addon id="plugin.video.kufrinaddon" name="[B][COLOR orangered]Kufrin Addon[/COLOR][/B]" version="1.0.1" provider-name="Kufrin">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+	<import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="hr_HR">Addon sadrzi Netflix filmove i serije. Addon ne sadrži nikakav sadržaj medija unutar sebe, već samo linkove do njih.</summary>
+		<platform>all</platform>
+		<website></website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.live.streamspro"
        name="LiveStreamsPro"
        version="2.8.1"
@@ -1922,7 +1952,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.2" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.3" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -1952,6 +1982,8 @@ V-1.2.8
 Azuiran ZadarWizard na novu verziju, prilagoden za sve verzije
 V-1.3.0
 Dodana Adriana Europe
+V-1.3.3
+Dodan novi Kufrin addon
 Uživajte
 http://zadarbuild.com.hr
 </news>
