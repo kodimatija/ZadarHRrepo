@@ -1411,8 +1411,14 @@ Initial Release
 	 </extension>
 </addon>
 
-<addon id="plugin.video.petrinja" name="IPTV Petrinja" version="1.0.0" provider-name="Zadar Build">
+<addon id="plugin.video.petrinja" name="Live TV Petrinja" version="1.1.0" provider-name="Zadar Build Team">
     <requires>
+        <import addon="script.module.certifi" version="2019.3.9"/>
+	<import addon="script.module.chardet" version="3.0.4"/>
+	<import addon="script.module.idna" version="2.8"/>
+	<import addon="script.module.requests" version="2.22.0"/>
+	<import addon="script.module.urllib3" version="1.25.3"/>
+        <import addon="plugin.video.f4mTester" version="2.7.2"/>
     </requires>
     <extension point="xbmc.python.pluginsource"
                library="default.py">
@@ -1420,8 +1426,8 @@ Initial Release
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary>IPTV Petrinja</summary>
-        <description>IPTV Petrinja</description>
+        <summary>Live TV Petrinja</summary>
+        <description>Live TV Petrinja KODI Addon za gledanje live TV programa. Ovaj add-on ne sadrzi nikakav autorski sadrzaj unutar add-ona vec samo linkove koji vode do strimova. Addon koristi linkove koji su javno dostupni na internetu, te autor ne snosi nikakvu odgovornost za njegovu upotrebu.</description>
     </extension>
 </addon>
 
@@ -2014,7 +2020,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.5" provider-name="ZDtim">
+<addon id="repository.ZadarHRrepo" name=".[COLOR blue]ZadarHR[/COLOR] repo" version="1.3.6" provider-name="ZDtim">
 	<extension point="xbmc.addon.repository" name="ZadarHRrepo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
@@ -2030,18 +2036,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<description lang="en">U ovom repo cete naci najnovije addonove i buildove od nasega tima potpuno prilagodjenih za podrucje ExYu i balkana</description>
 		<genre>all</genre>
 		<news>
-V-1.2.3
-Azurirana Adriana TV i AdrianaFilm
-V-1.2.4
-Azurirana Adriana Tv na V.1.1.6, azurirana livetvserbia
-V-1.2.5
-Dodan VukovaruSrcuTV addon
-V-1.2.6
-Prepravljene neke skripte
-V-1.2.7
-Azurirana adriana sport dodani roobinhood addoni
-V-1.2.8
-Azuiran ZadarWizard na novu verziju, prilagoden za sve verzije
 V-1.3.0
 Dodana Adriana Europe
 V-1.3.3
@@ -2050,6 +2044,8 @@ V-1.3.4
 Dodan PavoTV
 V-1.3.5
 Dodan Zorro Tv addon
+V-1.3.6
+Ažurirana Petrinja Tv
 Uživajte
 http://zadarbuild.com.hr
 </news>
