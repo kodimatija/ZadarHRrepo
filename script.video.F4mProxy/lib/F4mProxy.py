@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 XBMCLocalProxy 0.1
 Copyright 2011 Torben Gerkensmeyer
@@ -445,11 +446,11 @@ class f4mProxyHelper():
             f4m_proxy=f4mProxy()
             stopPlaying.clear()
             runningthread=thread.start_new_thread(f4m_proxy.start,(stopPlaying,))
-            progress.create('Starting local proxy')
-            stream_delay = 1
-            progress.update( 20, "", 'Loading local proxy', "" )
+            progress.create('LIVE IN Zadar Build')
+            stream_delay = 4
+            progress.update( 20, "", 'Pripremamo link za vas...', "" )
             xbmc.sleep(stream_delay*1000)
-            progress.update( 100, "", 'Loading local proxy', "" )
+            progress.update( 100, "", 'Pričekajte...', "" )
             url_to_play=f4m_proxy.prepare_url(url,proxy,use_proxy_for_chunks,maxbitrate=maxbitrate,simpleDownloader=simpleDownloader,auth=auth, streamtype=streamtype, swf=swf , callbackpath=callbackpath,callbackparam=callbackparam)
             listitem = xbmcgui.ListItem(name,path=url_to_play, iconImage=iconImage, thumbnailImage=iconImage)
             
